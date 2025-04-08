@@ -57,7 +57,34 @@ ul, ol, dl {
   margin-top: 0;
   margin-bottom: 1rem;
 }
+/* Adjust alignment */
+#news .container {
+  padding-left: 15px; /* Match biography padding */
+}
 
+.news-list {
+  margin-left: -15px; /* Offset container padding */
+}
+
+.date-col {
+  padding-right: 0 !important;
+  text-align: right;
+}
+
+.news-content {
+  padding-left: 30px !important; /* Match biography text indent */
+}
+
+/* For mobile */
+@media (max-width: 768px) {
+  .date-col {
+    text-align: left;
+    padding-left: 15px !important;
+  }
+  .news-content {
+    padding-left: 15px !important;
+  }
+}
 /* Navigation bar text */
 .navbar-light {
   font-family: 'Roboto', sans-serif;
