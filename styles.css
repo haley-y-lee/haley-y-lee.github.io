@@ -651,8 +651,9 @@ a[data-fancybox] img {
 }
 
 #profile .portrait {
-  width: 210px;      /* 원하는 크기 */
-  height: 280px;
+  width: 240px;      /* 원하는 크기 */
+  height: 320px;
+  margin: 0 auto;
   border-radius: 8px;   /* 0 이면 완전한 네모, 8px 정도면 살짝 둥근 네모 */
   object-fit: cover;    /* 이미 들어 있으므로 유지 */
 }
