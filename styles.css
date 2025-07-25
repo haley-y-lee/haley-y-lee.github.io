@@ -651,12 +651,12 @@ a[data-fancybox] img {
 }
 
 #profile .portrait {
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
-  border-radius: 50%;
-  object-fit: cover;
+  width: 260px;      /* 원하는 크기 */
+  height: 260px;
+  border-radius: 8px;   /* 0 이면 완전한 네모, 8px 정도면 살짝 둥근 네모 */
+  object-fit: cover;    /* 이미 들어 있으므로 유지 */
 }
+
 
 #profile .portrait-title h2 {
   font-size: 1.75em;
@@ -2271,4 +2271,8 @@ body.dark,
 .dark .btn-primary,
 .dark .btn.btn-primary.active {
   color: initial;
+}
+
+#about .row {
+  align-items: center;   /* flex‑box 수직 정렬 */
 }
