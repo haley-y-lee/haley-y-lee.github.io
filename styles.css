@@ -2277,3 +2277,14 @@ body.dark,
 #about .row {
   align-items: center;   /* flex‑box 수직 정렬 */
 }
+
+
+/* styles.css 제일 아래쪽에 추가 */
+.dark body{
+  background:#121212;   /* 암회색 */
+  color:#e0e0e0;        /* 밝은 글자색 */
+}
+
+.dark .navbar-light{
+  background:#1c1c1c !important;  /* 상단바도 다크 */
+}
