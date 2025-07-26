@@ -58,6 +58,32 @@
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0D7Y6ZKQK5"></script>
 <script>
+// Highlight active navbar link on scroll
+document.addEventListener('DOMContentLoaded', function() {
+  const sections = ['about', 'news', 'publications'];
+  const navLinks = {
+    about: document.querySelector('a[data-target="#about"]'),
+    news: document.querySelector('a[data-target="#news"]'),
+    publications: document.querySelector('a[data-target="#publications"]'),
+    cv: document.querySelector('a[data-target="HaleyLEE_CV.pdf"]')
+  };
+  function onScroll() {
+    let current = '';
+    const scrollY = window.pageYOffset;
+    sections.forEach(id => {
+      const section = document.getElementById(id);
+      if (section && section.offsetTop - 80 <= scrollY) {
+        current = id;
+      }
+    });
+    Object.keys(navLinks).forEach(key => {
+      if (navLinks[key]) navLinks[key].classList.remove('active');
+    });
+    if (current && navLinks[current]) navLinks[current].classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll);
+  onScroll();
+});
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -307,8 +333,8 @@
 
 <!-- ****** START One Pub Section ****** -->
 <div class="row">
-  <div class="col-lg-4 col-12" style="position: relative; width: 250px; height: auto;">
-    <img src="/gif/ultrathin.png">
+  <div class="col-lg-4 col-12" style="position: relative; width: 200px; height: auto;">
+    <img src="/gif/ultrathin.png" style="width: 100%; height: auto; max-width: 200px;">
   </div>
   <div class="col-12 col-lg-8" style="position: relative;padding-right: 12px;padding-left: 20px;">  
     <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
@@ -329,8 +355,8 @@
 
 <!-- ****** START One Pub Section ****** -->
 <div class="row">
-  <div class="col-lg-4 col-12" style="position: relative; width: 250px; height: auto;">
-    <img src="/gif/sp.gif">
+  <div class="col-lg-4 col-12" style="position: relative; width: 200px; height: auto;">
+    <img src="/gif/sp.gif" style="width: 100%; height: auto; max-width: 200px;">
   </div>
   <div class="col-12 col-lg-8" style="position: relative;padding-right: 12px;padding-left: 20px;">  
     <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
@@ -359,9 +385,9 @@ imaging with uniform phase transfer characteristics</strong></a>
 
 <!-- ****** START One Pub Section ****** -->
 <div class="row">
-  <div class="col-lg-4 col-12" style="position: relative; width: 250px; height: auto;">
+  <div class="col-lg-4 col-12" style="position: relative; width: 200px; height: auto;">
   <br>
-    <img src="/gif/rsspg.png">
+    <img src="/gif/rsspg.png" style="width: 100%; height: auto; max-width: 200px;">
   </div>
     
   <div class="col-12 col-lg-8" style="position: relative;padding-right: 12px;padding-left: 20px;">  
@@ -395,9 +421,9 @@ imaging with uniform phase transfer characteristics</strong></a>
 
 <!-- ****** START One Pub Section ****** -->
 <div class="row">
-  <div class="col-lg-4 col-12" style="position: relative; width: 250px; height: auto;">
+  <div class="col-lg-4 col-12" style="position: relative; width: 200px; height: auto;">
   <br>
-    <img src="/gif/improvement.png">
+    <img src="/gif/improvement.png" style="width: 100%; height: auto; max-width: 200px;">
   </div>
     
   <div class="col-12 col-lg-8" style="position: relative;padding-right: 12px;padding-left: 20px;">  
@@ -429,8 +455,8 @@ imaging with uniform phase transfer characteristics</strong></a>
 <br>
 <!-- ****** START One Pub Section ****** -->
 <div class="row">
-  <div class="col-lg-4 col-12" style="position: relative; width: 250px; height: auto;">
-  <img src="/gif/multi.png">
+  <div class="col-lg-4 col-12" style="position: relative; width: 200px; height: auto;">
+  <img src="/gif/multi.png" style="width: 100%; height: auto; max-width: 200px;">
   </div>
     
   <div class="col-12 col-lg-8" style="position: relative;padding-right: 12px;padding-left: 20px;">  
@@ -461,8 +487,8 @@ imaging with uniform phase transfer characteristics</strong></a>
 <br>
 <!-- ****** START One Pub Section ****** -->
 <div class="row">
-  <div class="col-lg-4 col-12" style="position: relative; width: 250px; height: auto;">
-  <img src="/gif/polar.png">
+  <div class="col-lg-4 col-12" style="position: relative; width: 200px; height: auto;">
+  <img src="/gif/polar.png" style="width: 100%; height: auto; max-width: 200px;">
   </div>
     
   <div class="col-12 col-lg-8" style="position: relative;padding-right: 12px;padding-left: 20px;">  
@@ -490,8 +516,8 @@ imaging with uniform phase transfer characteristics</strong></a>
       <br>
 <!-- ****** START One Pub Section ****** -->
 <div class="row">
-  <div class="col-lg-4 col-12" style="position: relative; width: 250px; height: auto;">
-  <img src="/gif/uv.png">
+  <div class="col-lg-4 col-12" style="position: relative; width: 200px; height: auto;">
+  <img src="/gif/uv.png" style="width: 100%; height: auto; max-width: 200px;">
   </div>
     
   <div class="col-12 col-lg-8" style="position: relative;padding-right: 12px;padding-left: 20px;">  
