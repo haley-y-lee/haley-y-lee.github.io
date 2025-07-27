@@ -29,13 +29,13 @@
   <style>
     .profile-img-hover {
       position: relative;
-      width: 225px;
-      height: 300px;
+      width: 320px;
+      height: 430px;
       max-width: 100%;
     }
     .profile-img-hover .main-img {
-      width: 225px;
-      height: 300px;
+      width: 320px;
+      height: 430px;
       object-fit: cover;
       display: block;
       transition: opacity 0.2s;
@@ -45,8 +45,8 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 225px;
-      height: 300px;
+      width: 320px;
+      height: 430px;
       object-fit: cover;
       display: block;
       opacity: 0;
@@ -67,8 +67,8 @@
   
 
   <link rel="manifest" href="/site.webmanifest">
-  <link rel="icon" type="image/png" href="/camera.png">
-  <link rel="apple-touch-icon" type="image/png" href="/camera.png">
+  <link rel="icon" type="image/png" href="camera.png">
+  <link rel="apple-touch-icon" type="image/png" href="camera.png">
 
   <link rel="canonical" href="/">
 
@@ -239,8 +239,8 @@ document.addEventListener('DOMContentLoaded', function() {
   <div class="col-12 col-lg-4">
     <div id="profile">
       <div class="profile-img-hover" style="text-align: center; margin: 0 auto;">
-        <img class="portrait main-img" src="prof.jpg" itemprop="image" alt="Avatar" style="width: 225px; height: 300px; object-fit: cover;">
-        <img class="hover-gif" src="event_frames.gif" alt="Speed GIF" style="width: 225px; height: 300px; object-fit: cover;" id="profile-hover-gif">
+        <img class="portrait main-img" src="prof.jpg" itemprop="image" alt="Avatar" style="width: 320px; height: 430px; object-fit: cover;">
+        <img class="hover-gif" src="event_frames.gif" alt="Speed GIF" style="width: 320px; height: 430px; object-fit: cover;" id="profile-hover-gif">
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   var profileImgHover = document.querySelector('.profile-img-hover');
@@ -258,9 +258,10 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
       </div>
       <div style="text-align: center; margin-top: 8px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; width: 225px; margin: 0 auto;">
-          <span style="font-size: 0.7rem; color: #d3d3d3; font-weight: 400; text-align: left;">Hover over the profile picture</span>
-          <span style="font-size: 0.7rem; color: #d3d3d3; font-weight: 400; text-align: right;">to see something cool!</span>
+        <div style="width: 225px; margin: 0 auto; text-align: justify; display: block;">
+          <span style="font-size: 0.7rem; color: #d3d3d3; font-weight: 400; display: block;">Hover over the profile picture</span>
+          <span style="font-size: 0.7rem; color: #d3d3d3; font-weight: 400; display: block;">to see something cool!</span>
+        </div>
         </div>
       </div>
       <div class="portrait-title">
@@ -276,8 +277,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <p style="text-align: justify;">Hi! I am a Computer Science PhD student in <strong><a href="https://kristinamonakhova.com/" target="_blank" style="color: #ffd700;"> Computational Imaging Lab @ Cornell</a></strong> advised by Professor Kristina Monakhova. My research focuses on machine learning and optimization to advance imaging systems, with the goal of expanding the limits of vision. Currently, I am working on event-based 3D motion detection and diffusion models.<br> <br>During my Undergraduate studies, I worked on lensless imaging and laser speckle imaging in Professor Seung Ah Lee's <a href="https://imaging.snu.ac.kr/" target="_blank" style="color: #ffd700;"> Imaging Intelligence Lab</a>. I also worked on Fourier Ptychography in Professor Guoan Zheng's <a href="https://sites.google.com/view/smartimaging/home?authuser=0" target="_blank" style="color: #ffd700;"> Smart Imaging Lab </a>. </p>
 
 <div style="text-align: center; margin-top: 24px;">
-  <h3 style="color: #ffd700; font-size: 1.5rem; font-weight: 400; margin-bottom: 8px; font-family: inherit;">Contact</h3>
-  <div style="color: #ffd700; font-size: 1.5rem; font-weight: 400; margin-bottom: 8px; font-family: inherit;">haleylee[dot]cs[dot]cornell[dot]edu</div>
+  <div style="color: #ffd700; font-size: 1.1rem; font-weight: 400; margin-bottom: 8px; font-family: inherit;">haleylee[dot]cs[dot]cornell[dot]edu</div>
   <div style="margin-top: 4px;">
     <a href="mailto:haleylee@cs.cornell.edu" title="Email" style="color: #ffd700; margin-right: 12px; font-size: 1.5rem;"><i class="fas fa-envelope"></i></a>
     <a href="https://scholar.google.com/citations?user=t2e56pQAAAAJ&hl=en" target="_blank" title="Google Scholar" style="color: #ffd700; margin-right: 12px; font-size: 1.5rem;"><i class="ai ai-google-scholar"></i></a>
@@ -502,35 +502,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
       
 <br>
-<!-- ****** START One Pub Section ****** -->
-<div class="row">
-  <div class="col-lg-4 col-12" style="position: relative; width: 200px; height: auto;">
-  <!-- <img src="/gif/multi.png" style="width: 100%; height: auto; max-width: 200px;"> -->
-  </div>
-    
-  <div class="col-12 col-lg-8" style="position: relative;padding-right: 12px;padding-left: 20px;">  
-        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-          <a href="https://opg.optica.org/oe/fulltext.cfm?uri=oe-31-21-35003&id=540546" itemprop="name" target="_blank" style="color: #ffd700;">Structured modulation multi-height microscopy for super-resolution imaging</a>
-  <span itemprop="author">
-    <span itemprop="author" style="font-size: 0.85rem;">
-    <br>L. Yang, <strong>Y. Lee</strong>, R. Wang, P. Song, D. Candela, T. Wang, S. Jiang, C. Guo, and X. Shao </span>
-  <br>Optics Express (2023)</em>
-
-  <p>
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://opg.optica.org/oe/fulltext.cfm?uri=oe-31-21-35003&id=540546" target="_blank" rel="noopener" style="color: #fff; border-color: #fff;">
-  Publication
-</a>
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/paperpdf/multi.pdf" target="_blank" rel="noopener" style="color: #fff; border-color: #fff;">
-  PDF
-</a>
-
-
-</p>
-</div>
-</div>
-</div>
-<!-- ****** END One Pub Section ****** -->  
 
 
   
