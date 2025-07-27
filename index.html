@@ -235,12 +235,78 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-<div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="person-email person-address">
-  <div class="col-12 col-lg-4">
+
+<style>
+  @media (min-width: 992px) {
+    .about-flex-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .about-profile-col {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      text-align: right;
+    }
+    .about-intro-col {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      text-align: left;
+    }
+  }
+  @media (max-width: 991.98px) {
+    .about-flex-row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .about-profile-col, .about-intro-col {
+      align-items: center !important;
+      text-align: center !important;
+      justify-content: center;
+    }
+    .about-profile-col {
+      margin-bottom: 16px;
+    }
+  }
+</style>
+
+<div class="about-flex-row">
+  <div class="about-profile-col col-12 col-lg-4">
     <div id="profile">
-      <div class="profile-img-hover" style="text-align: center; margin: 0 auto;">
+      <div class="profile-img-hover">
         <img class="portrait main-img" src="prof.jpg" itemprop="image" alt="Avatar" style="width: 320px; height: 430px; object-fit: cover;">
         <img class="hover-gif" src="event_frames.gif" alt="Speed GIF" style="width: 320px; height: 430px; object-fit: cover;" id="profile-hover-gif">
+      </div>
+      <div style="margin-top: 8px;">
+        <div style="width: 225px; margin: 0 auto; text-align: justify; display: block;">
+          <span style="font-size: 0.8rem; color: #b7b7b7; font-weight: 400; display: block;">Hover to see something cool!</span>
+        </div>
+      </div>
+      <div class="portrait-title">
+        <!-- Removed left-side email and icons as requested -->
+      </div>
+    </div>
+  </div>
+  <div class="about-intro-col col-12 col-lg-8" itemprop="description">
+    <br>
+    <p style="text-align: justify;">Hi! I am a Computer Science PhD student in <strong><a href="https://kristinamonakhova.com/" target="_blank" style="color: #ffd700;"> Computational Imaging Lab @ Cornell</a></strong> advised by Professor Kristina Monakhova. My research focuses on machine learning and optimization to advance imaging systems, with the goal of expanding the limits of vision. Currently, I am working on event-based 3D motion detection and diffusion models.<br> <br>During my Undergraduate studies, I worked on lensless imaging and laser speckle imaging in Professor Seung Ah Lee's <a href="https://imaging.snu.ac.kr/" target="_blank" style="color: #ffd700;"> Imaging Intelligence Lab</a>. I also worked on Fourier Ptychography in Professor Guoan Zheng's <a href="https://sites.google.com/view/smartimaging/home?authuser=0" target="_blank" style="color: #ffd700;"> Smart Imaging Lab </a>. </p>
+    <div style="text-align: center; margin-top: 24px;">
+      <div style="color: #ffd700; font-size: 1.1rem; font-weight: 400; margin-bottom: 8px; font-family: inherit;">haleylee[dot]cs[dot]cornell[dot]edu</div>
+      <div style="margin-top: 4px;">
+        <a href="mailto:haleylee@cs.cornell.edu" title="Email" style="color: #ffd700; margin-right: 12px; font-size: 1.5rem;"><i class="fas fa-envelope"></i></a>
+        <a href="https://scholar.google.com/citations?user=t2e56pQAAAAJ&hl=en" target="_blank" title="Google Scholar" style="color: #ffd700; margin-right: 12px; font-size: 1.5rem;"><i class="ai ai-google-scholar"></i></a>
+        <a href="https://www.linkedin.com/in/yujin-haley-lee-3a6375186" target="_blank" title="LinkedIn" style="color: #ffd700; margin-right: 12px; font-size: 1.5rem;"><i class="fab fa-linkedin"></i></a>
+        <a href="HaleyLEE_CV.pdf" target="_blank" title="CV" style="color: #ffd700; font-size: 1.5rem;"><i class="ai ai-cv"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   var profileImgHover = document.querySelector('.profile-img-hover');
@@ -256,41 +322,6 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 </script>
-      </div>
-      <div style="text-align: center; margin-top: 8px;">
-        <div style="width: 225px; margin: 0 auto; text-align: justify; display: block;">
-          <span style="font-size: 0.7rem; color: #d3d3d3; font-weight: 400; display: block;">Hover over the profile picture</span>
-          <span style="font-size: 0.7rem; color: #d3d3d3; font-weight: 400; display: block;">to see something cool!</span>
-        </div>
-        </div>
-      </div>
-      <div class="portrait-title">
-        <!-- Removed left-side email and icons as requested -->
-        
-      </div>
-       </div>
-      </div>
-
-  <div class="col-12 col-lg-8" itemprop="description">
-
-<br>
-<p style="text-align: justify;">Hi! I am a Computer Science PhD student in <strong><a href="https://kristinamonakhova.com/" target="_blank" style="color: #ffd700;"> Computational Imaging Lab @ Cornell</a></strong> advised by Professor Kristina Monakhova. My research focuses on machine learning and optimization to advance imaging systems, with the goal of expanding the limits of vision. Currently, I am working on event-based 3D motion detection and diffusion models.<br> <br>During my Undergraduate studies, I worked on lensless imaging and laser speckle imaging in Professor Seung Ah Lee's <a href="https://imaging.snu.ac.kr/" target="_blank" style="color: #ffd700;"> Imaging Intelligence Lab</a>. I also worked on Fourier Ptychography in Professor Guoan Zheng's <a href="https://sites.google.com/view/smartimaging/home?authuser=0" target="_blank" style="color: #ffd700;"> Smart Imaging Lab </a>. </p>
-
-<div style="text-align: center; margin-top: 24px;">
-  <div style="color: #ffd700; font-size: 1.1rem; font-weight: 400; margin-bottom: 8px; font-family: inherit;">haleylee[dot]cs[dot]cornell[dot]edu</div>
-  <div style="margin-top: 4px;">
-    <a href="mailto:haleylee@cs.cornell.edu" title="Email" style="color: #ffd700; margin-right: 12px; font-size: 1.5rem;"><i class="fas fa-envelope"></i></a>
-    <a href="https://scholar.google.com/citations?user=t2e56pQAAAAJ&hl=en" target="_blank" title="Google Scholar" style="color: #ffd700; margin-right: 12px; font-size: 1.5rem;"><i class="ai ai-google-scholar"></i></a>
-    <a href="https://www.linkedin.com/in/yujin-haley-lee-3a6375186" target="_blank" title="LinkedIn" style="color: #ffd700; margin-right: 12px; font-size: 1.5rem;"><i class="fab fa-linkedin"></i></a>
-    <a href="HaleyLEE_CV.pdf" target="_blank" title="CV" style="color: #ffd700; font-size: 1.5rem;"><i class="ai ai-cv"></i></a>
-  </div>
-</div>
-
-
-
-    
-  </div>
-</div>
 
     </div>   
   
@@ -379,7 +410,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!-- ****** START One Pub Section ****** -->
 <div class="row">
   <div class="col-lg-4 col-12" style="position: relative; width: 200px; height: auto;">
-    <!-- <img src="/gif/ultrathin.png" style="width: 100%; height: auto; max-width: 200px;"> -->
+    <img src="/gif/ultrathin.png" style="width: 100%; height: auto; max-width: 200px;">
   </div>
   <div class="col-12 col-lg-8" style="position: relative;padding-right: 12px;padding-left: 20px;">  
     <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
@@ -402,7 +433,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!-- ****** START One Pub Section ****** -->
 <div class="row">
   <div class="col-lg-4 col-12" style="position: relative; width: 200px; height: auto;">
-    <!-- <img src="/gif/sp.gif" style="width: 100%; height: auto; max-width: 200px;"> -->
+    <img src="/gif/sp.gif" style="width: 100%; height: auto; max-width: 200px;">
   </div>
   <div class="col-12 col-lg-8" style="position: relative;padding-right: 12px;padding-left: 20px;">  
     <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
@@ -432,7 +463,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="row">
   <div class="col-lg-4 col-12" style="position: relative; width: 200px; height: auto;">
   <br>
-    <!-- <img src="/gif/rsspg.png" style="width: 100%; height: auto; max-width: 200px;"> -->
+    <img src="/gif/rsspg.png" style="width: 100%; height: auto; max-width: 200px;">
   </div>
     
 
@@ -445,6 +476,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <br><strong>Y. Lee<sup>†</sup></strong>, S. Byun<sup>†</sup>, C. Yi,  J. Jung, and S. A. Lee </span>
   <br>Biomedical Optics Express (2024)</em>
           <br>Computational Optical Sensing and Imaging, Boston, MA, USA (2023)</em>
+          <br>
 <em><reddy>Best Student Paper Finalists</reddy></em>
           
   <p>
@@ -471,7 +503,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="row">
   <div class="col-lg-4 col-12" style="position: relative; width: 200px; height: auto;">
   <br>
-    <!-- <img src="/gif/improvement.png" style="width: 100%; height: auto; max-width: 200px;"> -->
+    <img src="/gif/improvement.png" style="width: 100%; height: auto; max-width: 200px;">
   </div>
     
   <div class="col-12 col-lg-8" style="position: relative;padding-right: 12px;padding-left: 20px;">  
@@ -509,7 +541,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!-- ****** START One Pub Section ****** -->
 <div class="row">
   <div class="col-lg-4 col-12" style="position: relative; width: 200px; height: auto;">
-  <!-- <img src="/gif/polar.png" style="width: 100%; height: auto; max-width: 200px;"> -->
+  <img src="/gif/polar.png" style="width: 100%; height: auto; max-width: 200px;">
   </div>
     
   <div class="col-12 col-lg-8" style="position: relative;padding-right: 12px;padding-left: 20px;">  
@@ -539,7 +571,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!-- ****** START One Pub Section ****** -->
 <div class="row">
   <div class="col-lg-4 col-12" style="position: relative; width: 200px; height: auto;">
-  <!-- <img src="/gif/uv.png" style="width: 100%; height: auto; max-width: 200px;"> -->
+  <img src="/gif/uv.png" style="width: 100%; height: auto; max-width: 200px;">
   </div>
     
   <div class="col-12 col-lg-8" style="position: relative;padding-right: 12px;padding-left: 20px;">  
@@ -550,6 +582,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <br><strong>Y. Lee<sup>†</sup></strong>, H. Chae<sup>†</sup>, K. C. Lee, N. Baek, T. Kim, J. Jung, and S. A. Lee </span>
   <br>IEEE Photonics Journal (2022)</em>
           <br>Imaging and Applied Optics Congress (2022)</em>
+          <br>
 <em><reddy>Selected as as Editorial Board Top Article</reddy></em>
   <p>
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://ieeexplore.ieee.org/document/9730042" target="_blank" rel="noopener" style="color: #fff; border-color: #fff;">
