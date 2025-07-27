@@ -33,27 +33,31 @@
       height: 300px;
       max-width: 100%;
     }
-    .profile-img-hover img {
+    .profile-img-hover .main-img {
       width: 225px;
       height: 300px;
       object-fit: cover;
       display: block;
       transition: opacity 0.2s;
+      opacity: 1;
     }
     .profile-img-hover .hover-gif {
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%;
-      height: 100%;
-      display: none;
+      width: 225px;
+      height: 300px;
+      object-fit: cover;
+      display: block;
+      opacity: 0;
       pointer-events: none;
+      transition: opacity 0.2s;
     }
     .profile-img-hover:hover .main-img {
       opacity: 0;
     }
     .profile-img-hover:hover .hover-gif {
-      display: block;
+      opacity: 1;
     }
   </style>
 
@@ -235,13 +239,14 @@ document.addEventListener('DOMContentLoaded', function() {
   <div class="col-12 col-lg-4">
     <div id="profile">
       <div class="profile-img-hover" style="text-align: center; margin: 0 auto;">
-        <img class="portrait main-img" src="prof.jpg" itemprop="image" alt="Avatar" style="display: inline-block;">
-        <img class="hover-gif" src="speed.gif" alt="Speed GIF" style="display: inline-block;">
+        <img class="portrait main-img" src="prof.jpg" itemprop="image" alt="Avatar" style="width: 225px; height: 300px; object-fit: cover;">
+        <img class="hover-gif" src="event_frames.gif" alt="Speed GIF" style="width: 225px; height: 300px; object-fit: cover;">
       </div>
-
+      <div style="text-align: center; margin-top: 8px;">
+        <h3 style="font-size: 0.7rem; color: #fff; font-weight: 400; margin-bottom: 0;">Hover over the profile picture to see something cool!</h3>
+      </div>
       <div class="portrait-title">
         <div style="margin-bottom: 10px;"></div>
-        <h3 style="font-size: 0.6rem; color: #313131; font-weight: 100;">Hover over the profile picture to see something cool!</h3>
         <h7 style="color: #ffd700;">haleylee[dot]cs[dot]cornell[dot]edu</h7>
         <div style="margin-top: 10px;">
           <a href="https://scholar.google.com/citations?user=t2e56pQAAAAJ&hl=en" target="_blank" title="Google Scholar" style="color: #ffd700; margin-right: 10px; font-size: 1.5rem;"><i class="ai ai-google-scholar"></i></a>
@@ -260,6 +265,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <br>
 <p style="text-align: justify;">Hi! I am a Computer Science PhD student in <strong><a href="https://kristinamonakhova.com/" target="_blank" style="color: #ffd700;"> Computational Imaging Lab @ Cornell</a></strong> advised by Professor Kristina Monakhova. My research focuses on machine learning and optimization to advance imaging systems, with the goal of expanding the limits of vision. Currently, I am working on event-based 3D motion detection and diffusion models.<br> <br>During my Undergraduate studies, I worked on lensless imaging and laser speckle imaging in Professor Seung Ah Lee's <a href="https://imaging.snu.ac.kr/" target="_blank" style="color: #ffd700;"> Imaging Intelligence Lab</a>. I also worked on Fourier Ptychography in Professor Guoan Zheng's <a href="https://sites.google.com/view/smartimaging/home?authuser=0" target="_blank" style="color: #ffd700;"> Smart Imaging Lab </a>. </p>
+
+<div style="text-align: center; margin-top: 24px;">
+  <h3 style="color: #fff; font-size: 1rem; font-weight: 500; margin-bottom: 8px;">Contact</h3>
+  <div style="color: #ffd700; font-size: 1rem; margin-bottom: 8px;">haleylee[dot]cs[dot]cornell[dot]edu</div>
+  <div style="margin-top: 4px;">
+    <a href="mailto:haleylee@cs.cornell.edu" title="Email" style="color: #ffd700; margin-right: 12px; font-size: 1.5rem;"><i class="fas fa-envelope"></i></a>
+    <a href="https://scholar.google.com/citations?user=t2e56pQAAAAJ&hl=en" target="_blank" title="Google Scholar" style="color: #ffd700; margin-right: 12px; font-size: 1.5rem;"><i class="ai ai-google-scholar"></i></a>
+    <a href="https://www.linkedin.com/in/yujin-haley-lee-3a6375186" target="_blank" title="LinkedIn" style="color: #ffd700; margin-right: 12px; font-size: 1.5rem;"><i class="fab fa-linkedin"></i></a>
+    <a href="HaleyLEE_CV.pdf" target="_blank" title="CV" style="color: #ffd700; font-size: 1.5rem;"><i class="ai ai-cv"></i></a>
+  </div>
+</div>
 
 
 
@@ -346,7 +362,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="container">
       
   <div class="col-12 col-lg-4 section-heading">
-    <h1 style="color: #ffd700;">Publications</h1>
+    <h1 style="color: #fff;">Publications</h1>
     <br>
     
   </div>
@@ -354,7 +370,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!-- ****** START One Pub Section ****** -->
 <div class="row">
   <div class="col-lg-4 col-12" style="position: relative; width: 200px; height: auto;">
-    <img src="/gif/ultrathin.png" style="width: 100%; height: auto; max-width: 200px;">
+    <!-- <img src="/gif/ultrathin.png" style="width: 100%; height: auto; max-width: 200px;"> -->
   </div>
   <div class="col-12 col-lg-8" style="position: relative;padding-right: 12px;padding-left: 20px;">  
     <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
@@ -377,7 +393,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!-- ****** START One Pub Section ****** -->
 <div class="row">
   <div class="col-lg-4 col-12" style="position: relative; width: 200px; height: auto;">
-    <img src="/gif/sp.gif" style="width: 100%; height: auto; max-width: 200px;">
+    <!-- <img src="/gif/sp.gif" style="width: 100%; height: auto; max-width: 200px;"> -->
   </div>
   <div class="col-12 col-lg-8" style="position: relative;padding-right: 12px;padding-left: 20px;">  
     <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
@@ -407,7 +423,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="row">
   <div class="col-lg-4 col-12" style="position: relative; width: 200px; height: auto;">
   <br>
-    <img src="/gif/rsspg.png" style="width: 100%; height: auto; max-width: 200px;">
+    <!-- <img src="/gif/rsspg.png" style="width: 100%; height: auto; max-width: 200px;"> -->
   </div>
     
   <div class="col-12 col-lg-8" style="position: relative;padding-right: 12px;padding-left: 20px;">  
@@ -444,7 +460,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="row">
   <div class="col-lg-4 col-12" style="position: relative; width: 200px; height: auto;">
   <br>
-    <img src="/gif/improvement.png" style="width: 100%; height: auto; max-width: 200px;">
+    <!-- <img src="/gif/improvement.png" style="width: 100%; height: auto; max-width: 200px;"> -->
   </div>
     
   <div class="col-12 col-lg-8" style="position: relative;padding-right: 12px;padding-left: 20px;">  
@@ -478,7 +494,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!-- ****** START One Pub Section ****** -->
 <div class="row">
   <div class="col-lg-4 col-12" style="position: relative; width: 200px; height: auto;">
-  <img src="/gif/multi.png" style="width: 100%; height: auto; max-width: 200px;">
+  <!-- <img src="/gif/multi.png" style="width: 100%; height: auto; max-width: 200px;"> -->
   </div>
     
   <div class="col-12 col-lg-8" style="position: relative;padding-right: 12px;padding-left: 20px;">  
@@ -511,7 +527,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!-- ****** START One Pub Section ****** -->
 <div class="row">
   <div class="col-lg-4 col-12" style="position: relative; width: 200px; height: auto;">
-  <img src="/gif/polar.png" style="width: 100%; height: auto; max-width: 200px;">
+  <!-- <img src="/gif/polar.png" style="width: 100%; height: auto; max-width: 200px;"> -->
   </div>
     
   <div class="col-12 col-lg-8" style="position: relative;padding-right: 12px;padding-left: 20px;">  
@@ -541,7 +557,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!-- ****** START One Pub Section ****** -->
 <div class="row">
   <div class="col-lg-4 col-12" style="position: relative; width: 200px; height: auto;">
-  <img src="/gif/uv.png" style="width: 100%; height: auto; max-width: 200px;">
+  <!-- <img src="/gif/uv.png" style="width: 100%; height: auto; max-width: 200px;"> -->
   </div>
     
   <div class="col-12 col-lg-8" style="position: relative;padding-right: 12px;padding-left: 20px;">  
