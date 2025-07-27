@@ -26,6 +26,34 @@
   
 
   <link rel="stylesheet" href="/styles.css">
+  <style>
+    .profile-img-hover {
+      position: relative;
+      width: 100%;
+      max-width: 100%;
+    }
+    .profile-img-hover img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: opacity 0.2s;
+    }
+    .profile-img-hover .hover-gif {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: none;
+      pointer-events: none;
+    }
+    .profile-img-hover:hover .main-img {
+      opacity: 0;
+    }
+    .profile-img-hover:hover .hover-gif {
+      display: block;
+    }
+  </style>
 
   
   <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Haley Lee">
@@ -33,8 +61,8 @@
   
 
   <link rel="manifest" href="/site.webmanifest">
-  <link rel="icon" type="image/png" href="/img/icon.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+  <link rel="icon" type="image/png" href="/camera.png">
+  <link rel="apple-touch-icon" type="image/png" href="/camera.png">
 
   <link rel="canonical" href="/">
 
@@ -203,10 +231,10 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="person-email person-address">
   <div class="col-12 col-lg-4">
     <div id="profile">
-
-      
-      <img class="portrait" src="img.jpg" itemprop="image" alt="Avatar">
-      
+      <div class="profile-img-hover">
+    <img class="portrait main-img" src="img.jpg" itemprop="image" alt="Avatar">
+    <img class="hover-gif" src="gif/sp.gif" alt="Speed GIF">
+  </div>
 
       <div class="portrait-title">
         <h2 itemprop="name"><strong>Haley Lee</strong></h2>
@@ -224,7 +252,7 @@ document.addEventListener('DOMContentLoaded', function() {
   <div class="col-12 col-lg-8" itemprop="description">
 
 <br>
-<p style="text-align: justify;">Hi! I am a first-year Computer Science PhD student at Cornell University advised by <strong><a href="https://kristinamonakhova.com/kristina/" target="_blank" style="color: #ffd700;"> Kristina Monakhova</a></strong>. My research focuses on machine learning and optimization to advance imaging systems, with the goal of expanding the limits of vision. Currently, I am working on <strong>event-based 3D Motion detection</strong> and <strong>diffusion models</strong>.<br> <br>Previously, I studied in Electrical and Electronic Engineering at Yonsei University, where I worked on lensless imaging and laser speckle imaging, advised by <strong><a href="https://sites.google.com/oisl.me/oisl/home" target="_blank" style="color: #ffd700;"> Seung Ah Lee</a></strong>. I also had the opportunity to be advised by <strong><a href="https://sites.google.com/view/smartimaging/home?authuser=0" target="_blank" style="color: #ffd700;"> Guoan Zheng </a></strong> at University of Conneticut, where I worked on Fourier ptychography. </p>
+<p style="text-align: justify;">Hi! I am a Computer Science PhD student in <strong><a href="https://kristinamonakhova.com/" target="_blank" style="color: #ffd700;"> Computational Imaging Lab @ Cornell</a></strong> advised by Professor Kristina Monakhova. My research focuses on machine learning and optimization to advance imaging systems, with the goal of expanding the limits of vision. Currently, I am working on event-based 3D Motion detection and diffusion models.<br> <br>During my Undergraduate studies, I worked on lensless imaging and laser speckle imaging in Professor Seung Ah Lee's <a href="https://imaging.snu.ac.kr/" target="_blank" style="color: #ffd700;"> Imaging Intelligence Lab</a>. I also worked on Fourier Ptychography in Professor Guoan Zheng's <a href="https://sites.google.com/view/smartimaging/home?authuser=0" target="_blank" style="color: #ffd700;"> Smart Imaging Lab </a>. </p>
 
 
 
