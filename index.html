@@ -274,6 +274,12 @@ document.addEventListener('DOMContentLoaded', function() {
     .about-profile-col {
       margin-bottom: 16px;
     }
+    .profile-img-hover {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
   }
 </style>
 
@@ -288,6 +294,12 @@ document.addEventListener('DOMContentLoaded', function() {
         <div style="width: 225px; margin: 0 auto; text-align: center; display: block;">
           <span style="font-size: 0.8rem; color: #b7b7b7; font-weight: 400; font-family: 'Fira Code', monospace; white-space: nowrap;">Hover to see something cool!</span>
         </div>
+      </div>
+      <div style="width: 225px; margin: 0 auto; text-align: center; display: block; margin-top: 12px;">
+        <span style="font-size: 0.9rem; color: #b7b7b7; font-family: 'Fira Code', monospace;">Contact</span>
+      </div>
+      <div style="width: 225px; margin: 0 auto; text-align: center; display: block; margin-top: 4px;">
+        <span style="font-size: 0.9rem; color: #ffd700; font-family: 'Fira Code', monospace;">haleylee@cs.cornell.edu</span>
       </div>
       <div class="portrait-title">
         <!-- Removed left-side email and icons as requested -->
@@ -377,19 +389,18 @@ document.addEventListener('DOMContentLoaded', function() {
 <section id="news" class="home-section">
     <div class="container">
         <div class="col-12 section-heading">
-            <h1>News</h1>
+            <h1 style="font-family: 'Fira Code', monospace; color: #fff; font-size: 1.2rem;">News</h1>
             <br>
         </div>
-        
         <!-- Modified News Items -->
-        <div class="news-list pl-0"> <!-- Added pl-0 to remove padding -->
+        <div class="news-list pl-0" style="font-family: 'Fira Code', monospace; color: #fff; font-size: 0.85rem;"> <!-- Added pl-0 to remove padding -->
             <!-- News Item 1 -->
             <div class="row news-item">
-                <div class="col-2 text-muted date-col pl-0"> <!-- Reduced column width and removed padding -->
+                <div class="col-2 text-muted date-col pl-0" style="color: #fff; font-family: 'Fira Code', monospace; font-size: 0.85rem;"> <!-- Reduced column width and removed padding -->
                     <strong>Aug 26, 2024</strong>
                 </div>
-                <div class="col-10 news-content pl-4"> <!-- Increased column width and added padding -->
-                    I joined <a href="https://kristinamonakhova.com/kristina/" target="_blank" style="color: #ffd700;">Computational Imaging Lab @ Cornell</a> as a graduate researcher!
+                <div class="col-10 news-content pl-4" style="color: #fff; font-family: 'Fira Code', monospace; font-size: 0.85rem;"> <!-- Increased column width and added padding -->
+                    I joined <a href="https://kristinamonakhova.com/kristina/" target="_blank" style="color: #ffd700; font-family: 'Fira Code', monospace;">Computational Imaging Lab @ Cornell</a> as a graduate researcher!
                 </div>
             </div>
         </div>
@@ -402,9 +413,8 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="container">
       
   <div class="col-12 col-lg-4 section-heading">
-    <h1 style="color: #fff;">Publications</h1>
+    <h1 style="color: #fff; font-family: 'Fira Code', monospace; font-size: 1.2rem;">Publications</h1>
     <br>
-    
   </div>
 
 <!-- ****** START One Pub Section ****** -->
@@ -414,14 +424,14 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
   <div class="col-12 col-lg-8" style="position: relative; padding-right: 12px; padding-left: 8px;">  
     <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-      <a href="https://www.nature.com/articles/s41377-024-01510-5" itemprop="name" target="_blank" style="color: #ffd700;">Ptycho-endoscopy on a lensless ultrathin fiber bundle tip</a>
-      <span itemprop="author">
-        <span itemprop="author" style="font-size: 0.85rem;">
+      <a href="https://www.nature.com/articles/s41377-024-01510-5" itemprop="name" target="_blank" style="color: #ffd700; font-family: 'Fira Code', monospace; font-size: 0.85rem;">Ptycho-endoscopy on a lensless ultrathin fiber bundle tip</a>
+      <span itemprop="author" style="color: #fff; font-family: 'Fira Code', monospace; font-size: 0.85rem;">
+        <span itemprop="author" style="font-size: 0.85rem; color: #fff; font-family: 'Fira Code', monospace;">
         <br>P. Song, R. Wang, L. Loetgering, J. Liu, P. Vouras, <strong>Y. Lee</strong>, S. Jiang, B. Feng, A. Maiden, C, Yang and G. Zheng </span>
       <br>Light: Science & Applications (2024)
       <p>
-        <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.nature.com/articles/s41377-024-01510-5" target="_blank" rel="noopener" style="color: #fff; border-color: #fff;">Publication</a>
-        <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/paperpdf/ultrathin.pdf" target="_blank" rel="noopener" style="color: #fff; border-color: #fff;">PDF</a>
+        <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.nature.com/articles/s41377-024-01510-5" target="_blank" rel="noopener" style="color: #fff; border-color: #fff; font-family: 'Fira Code', monospace; font-size: 0.85rem;">Publication</a>
+        <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/paperpdf/ultrathin.pdf" target="_blank" rel="noopener" style="color: #fff; border-color: #fff; font-family: 'Fira Code', monospace; font-size: 0.85rem;">PDF</a>
       </p>
     </div>
   </div>
@@ -437,17 +447,17 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
   <div class="col-12 col-lg-8" style="position: relative;padding-right: 12px;padding-left: 20px;">  
     <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-          <a href="https://arxiv.org/abs/2311.17619" itemprop="name" target="_blank" style="color: #ffd700;">Spatially-coded Fourier ptychography: flexible and detachable coded thin films for quantitative phase imaging with uniform phase transfer characteristics</a>
-  <span itemprop="author">
-    <span itemprop="author" style="font-size: 0.85rem;">
+          <a href="https://arxiv.org/abs/2311.17619" itemprop="name" target="_blank" style="color: #ffd700; font-family: 'Fira Code', monospace; font-size: 0.85rem;">Spatially-coded Fourier ptychography: flexible and detachable coded thin films for quantitative phase imaging with uniform phase transfer characteristics</a>
+  <span itemprop="author" style="color: #fff; font-family: 'Fira Code', monospace; font-size: 0.85rem;">
+    <span itemprop="author" style="font-size: 0.85rem; color: #fff; font-family: 'Fira Code', monospace;">
     <br>R. Wang<sup>†</sup>, L. Yang<sup>†</sup>, <strong>Y. Lee<sup>†</sup></strong>, K. Sun, K. Shen, Q. Zhao, T. Wang, Z. Zhang, J. Liu, P. Song, and G. Zheng </span>
   <br>Advanced Optical Materials (2024)
   <p>
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://onlinelibrary.wiley.com/doi/full/10.1002/adom.202303028" target="_blank" rel="noopener" style="color: #fff; border-color: #fff;">
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://onlinelibrary.wiley.com/doi/full/10.1002/adom.202303028" target="_blank" rel="noopener" style="color: #fff; border-color: #fff; font-family: 'Fira Code', monospace; font-size: 0.85rem;">
   Publication
 </a>
 
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/paperpdf/coded.pdf" target="_blank" rel="noopener" style="color: #fff; border-color: #fff;">
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/paperpdf/coded.pdf" target="_blank" rel="noopener" style="color: #fff; border-color: #fff; font-family: 'Fira Code', monospace; font-size: 0.85rem;">
   PDF
 </a>
 
