@@ -60,6 +60,14 @@
     .profile-img-hover:hover .hover-gif {
       opacity: 1;
     }
+    /* Fix news date alignment on mobile */
+    @media (max-width: 991.98px) {
+      .date-col {
+        text-align: left !important;
+        padding-left: 0 !important;
+        margin-left: 0 !important;
+      }
+    }
   </style>
 
   
@@ -376,14 +384,21 @@ document.addEventListener('DOMContentLoaded', function() {
         <!-- Modified News Items -->
         <div class="news-list pl-0"> <!-- Removed custom font and color -->
             <!-- News Item 1 -->
-            <div class="row news-item">
-                <div class="col-lg-2 text-muted date-col pl-0">
-                    <strong>Aug 26, 2024</strong>
-                </div>
-                <div class="col-10 news-content pl-4">
-                    I joined <a href="https://kristinamonakhova.com/kristina/" target="_blank" style="color: #ffd700;">Computational Imaging Lab @ Cornell</a> as a graduate researcher!
-                </div>
+            <div class="row news-item px-3 py-10"> <!-- add px-3 for horizontal padding -->
+            <!-- Date column -->
+            <div class="col-auto text-muted">
+              <strong>Aug 26, 2024</strong>
             </div>
+
+            <!-- Content column -->
+            <div class="col">
+              I joined 
+              <a href="https://kristinamonakhova.com/kristina/" target="_blank" style="color: #ffd700;">
+                Computational Imaging Lab @ Cornell
+              </a> 
+              as a graduate researcher!
+            </div>
+          </div>
         </div>
     </div>
 </section>
@@ -398,8 +413,8 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 
 <!-- ****** START One Pub Section ****** -->
-<div class="row align-items-center" style="display: flex; flex-wrap: wrap; align-items: center;">
-  <div class="col-lg-4 col-12 d-flex justify-content-center align-items-center" style="position: relative; width: 140px; height: 180px; min-height: 180px; display: flex; align-items: center; justify-content: center;">
+<div class="row align-items-center" style="display: flex; flex-wrap: wrap; align-items: center; margin-left: 0; margin-top: 24px;">
+  <div class="col-lg-2 col-12 d-flex align-items-center" style="position: relative; width: 140px; height: 180px; min-height: 180px; display: flex; align-items: center; justify-content: flex-start; margin-left: 0; padding-left: 0;">
     <img src="/gif/ultrathin.png" style="width: 140px; height: 180px; object-fit: contain; max-width: 100%; max-height: 100%;">
   </div>
   <div class="col-12 col-lg-8 d-flex flex-column justify-content-center" style="position: relative; padding-right: 6px; padding-left: 4px; min-height: 180px; display: flex; justify-content: center;">
@@ -421,8 +436,8 @@ document.addEventListener('DOMContentLoaded', function() {
 <br>
 
 <!-- ****** START One Pub Section ****** -->
-<div class="row align-items-center" style="display: flex; flex-wrap: wrap; align-items: center;">
-  <div class="col-lg-4 col-12 d-flex justify-content-center align-items-center" style="position: relative; width: 140px; height: 180px; min-height: 180px; display: flex; align-items: center; justify-content: center;">
+<div class="row align-items-center" style="display: flex; flex-wrap: wrap; align-items: center; margin-left: 0;">
+  <div class="col-lg-2 col-12 d-flex align-items-center" style="position: relative; width: 140px; height: 180px; min-height: 180px; display: flex; align-items: center; justify-content: flex-start; margin-left: 0; padding-left: 0;">
     <img src="/gif/sp.png" style="width: 140px; height: 180px; object-fit: contain; max-width: 100%; max-height: 100%;">
   </div>
   <div class="col-12 col-lg-8 d-flex flex-column justify-content-center" style="position: relative;padding-right: 6px;padding-left: 10px; min-height: 180px; display: flex; justify-content: center;">
@@ -450,8 +465,8 @@ document.addEventListener('DOMContentLoaded', function() {
       <br>
 
 <!-- ****** START One Pub Section ****** -->
-<div class="row">
-  <div class="col-lg-4 col-12" style="position: relative; width: 140px; height: 180px; display: flex; align-items: center; justify-content: center;">
+<div class="row" style="margin-left: 0;">
+  <div class="col-lg-2 col-12" style="position: relative; width: 140px; height: 180px; display: flex; align-items: center; justify-content: flex-start; margin-left: 0; padding-left: 0;">
   <br>
     <img src="/gif/rsspg.png" style="width: 140px; height: 180px; object-fit: contain; max-width: 100%; max-height: 100%;">
   </div>
@@ -490,8 +505,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 <!-- ****** START One Pub Section ****** -->
-<div class="row">
-  <div class="col-lg-4 col-12" style="position: relative; width: 140px; height: 180px; display: flex; align-items: center; justify-content: center;">
+<div class="row" style="margin-left: 0;">
+  <div class="col-lg-2 col-12" style="position: relative; width: 140px; height: 180px; display: flex; align-items: flex-start; justify-content: flex-start; margin-left: 0; padding-left: 0;">
   <br>
     <img src="/gif/improvement.png" style="width: 140px; height: 180px; object-fit: contain; max-width: 100%; max-height: 100%;">
   </div>
@@ -529,12 +544,11 @@ document.addEventListener('DOMContentLoaded', function() {
   
 <br>
 <!-- ****** START One Pub Section ****** -->
-<div class="row">
-  <div class="col-lg-4 col-12" style="position: relative; width: 140px; height: 180px; display: flex; align-items: center; justify-content: center;">
-  <img src="/gif/polar.png" style="width: 140px; height: 180px; object-fit: contain; max-width: 100%; max-height: 100%;">
+<div class="row align-items-start" style="margin-left: 0; display: flex; align-items: flex-start;">
+  <div class="col-lg-2 col-12 d-flex align-items-start" style="position: relative; width: 140px; height: 180px; min-height: 180px; display: flex; align-items: flex-start; justify-content: flex-start; margin-left: 0; padding-left: 0;">
+    <img src="/gif/polar.png" style="width: 140px; height: 180px; object-fit: contain; max-width: 100%; max-height: 100%;">
   </div>
-    
-  <div class="col-12 col-lg-8" style="position: relative;padding-right: 6px;padding-left: 10px;">  
+  <div class="col-12 col-lg-8 d-flex flex-column justify-content-start align-items-start" style="position: relative;padding-right: 6px;padding-left: 10px; display: flex; align-items: flex-start;">  
         <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
           <a href="https://pubs.aip.org/aip/app/article/7/11/116107/2835266/Lensless-polarization-camera-for-single-shot-full" itemprop="name" target="_blank" style="color: #ffd700;">Lensless polarization camera for single-shot full-Stokes imaging</a>
   <span itemprop="author">
@@ -559,12 +573,12 @@ document.addEventListener('DOMContentLoaded', function() {
 <!-- ****** END One Pub Section ****** -->       
       <br>
 <!-- ****** START One Pub Section ****** -->
-<div class="row">
-  <div class="col-lg-4 col-12" style="position: relative; width: 140px; height: 180px; display: flex; align-items: center; justify-content: center;">
+<div class="row" style="margin-left: 0;">
+  <div class="col-lg-2 col-12" style="position: relative; width: 140px; height: 180px; display: flex; align-items: flex-start; justify-content: flex-start; margin-left: 0; padding-left: 0;">
   <img src="/gif/uv.png" style="width: 140px; height: 180px; object-fit: contain; max-width: 100%; max-height: 100%;">
   </div>
     
-  <div class="col-12 col-lg-8" style="position: relative;padding-right: 6px;padding-left: 10px;">  
+  <div class="col-12 col-lg-8" style="position: relative;padding-right: 6px;padding-left: 12px;">  
         <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
           <a href="https://ieeexplore.ieee.org/document/9730042" itemprop="name" target="_blank" style="color: #ffd700;">Fabrication of Integrated Lensless Cameras via UV-Imprint Lithography</a>
   <span itemprop="author">
