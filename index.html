@@ -290,10 +290,8 @@ document.addEventListener('DOMContentLoaded', function() {
         <img class="portrait main-img" src="prof.jpg" itemprop="image" alt="Avatar" style="width: 320px; height: 430px; object-fit: cover;">
         <img class="hover-gif" src="event_frames.gif" alt="Speed GIF" style="width: 320px; height: 430px; object-fit: cover;" id="profile-hover-gif">
       </div>
-      <div style="margin-top: 8px;">
-        <div style="width: 225px; margin: 0 auto; text-align: center; display: block;">
-          <span style="font-size: 0.8rem; color: #b7b7b7; font-weight: 400; font-family: 'Fira Code', monospace; white-space: nowrap;">Hover to see something cool!</span>
-        </div>
+      <div style="margin-top: 16px; width: 100%; display: flex; justify-content: center; align-items: center;">
+        <span style="font-size: 0.8rem; color: #b7b7b7; font-weight: 400; font-family: 'Fira Code', monospace; white-space: nowrap; text-align: center;">Hover to see something cool!</span>
       </div>
     </div>
   </div>
@@ -334,7 +332,7 @@ document.addEventListener('DOMContentLoaded', function() {
       <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start;">
         <span style="font-size: 1.1rem; color: #b7b7b7; font-family: 'Fira Code', monospace; font-weight: 800;">Contact</span>
         <span style="font-size: 0.9rem; color: #ffd700; font-family: 'Fira Code', monospace; margin: 8px 0 12px 0;">haleylee[at]cs[dot]cornell[dot]</span>
-        <div style="display: flex; justify-content: flex-start; align-items: center; gap: 24px; margin-top: 4px;">
+        <div style="display: flex; justify-content: flex-start; align-items: center; gap: 24px; margin-top: 4px">
           <a href="mailto:haleylee@cs.cornell.edu" title="Email" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fas fa-envelope"></i></a>
           <a href="https://scholar.google.com/citations?user=t2e56pQAAAAJ&hl=en" target="_blank" title="Google Scholar" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-google-scholar"></i></a>
           <a href="https://www.linkedin.com/in/yujin-haley-lee-3a6375186" target="_blank" title="LinkedIn" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fab fa-linkedin"></i></a>
@@ -358,6 +356,36 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+<!-- Publications Section -->
+<section id="publications" class="home-section" style="margin-top: 48px;">
+  <div class="container">
+    <h2 style="font-family: 'Fira Code', monospace; font-size: 2.6rem; color: #fff; font-weight: 800; margin-bottom: 32px;">Publication</h2>
+    <ul class="bibliography" style="list-style: none; padding: 0;">
+      <li style="margin-bottom: 32px; display: flex; align-items: center;">
+        <img class="teaser" src="gif/sp.png" alt="SP publication" style="width: 160px; margin-right: 24px; border-radius: 8px;" />
+        <div>
+          <span style="font-size: 1.1rem; color: #ffd700; font-family: 'Fira Code', monospace; font-weight: 700;">Single-pixel Event-based 3D Motion Detection</span><br />
+          <span style="font-size: 1rem; color: #b7b7b7;">Y. Lee, K. Monakhova, et al. <br /> <a href="paperpdf/SP.pdf" target="_blank" style="color: #ffd700;">PDF</a></span>
+        </div>
+      </li>
+      <li style="margin-bottom: 32px; display: flex; align-items: center;">
+        <img class="teaser" src="gif/polar.png" alt="Polar publication" style="width: 160px; margin-right: 24px; border-radius: 8px;" />
+        <div>
+          <span style="font-size: 1.1rem; color: #ffd700; font-family: 'Fira Code', monospace; font-weight: 700;">Polarization-based Lensless Imaging</span><br />
+          <span style="font-size: 1rem; color: #b7b7b7;">Y. Lee, S.A. Lee, et al. <br /> <a href="paperpdf/polar.pdf" target="_blank" style="color: #ffd700;">PDF</a></span>
+        </div>
+      </li>
+      <li style="margin-bottom: 32px; display: flex; align-items: center;">
+        <img class="teaser" src="gif/ultrathin.png" alt="Ultrathin publication" style="width: 160px; margin-right: 24px; border-radius: 8px;" />
+        <div>
+          <span style="font-size: 1.1rem; color: #ffd700; font-family: 'Fira Code', monospace; font-weight: 700;">Ultrathin Lensless Imaging</span><br />
+          <span style="font-size: 1rem; color: #b7b7b7;">Y. Lee, S.A. Lee, et al. <br /> <a href="paperpdf/ultrathin.pdf" target="_blank" style="color: #ffd700;">PDF</a></span>
+        </div>
+      </li>
+      <!-- Add more publications as needed -->
+    </ul>
+  </div>
+</section>
     <br>
     <p style="text-align: justify;">Hi! I am a Computer Science PhD student in <strong><a href="https://kristinamonakhova.com/" target="_blank" style="color: #ffd700;"> Computational Imaging Lab @ Cornell</a></strong> advised by Professor Kristina Monakhova. My research focuses on machine learning and optimization to advance imaging systems, with the goal of expanding the limits of vision. Currently, I am working on event-based 3D motion detection and diffusion models.<br> <br>During my Undergraduate studies, I worked on lensless imaging and laser speckle imaging in Professor Seung Ah Lee's <a href="https://imaging.snu.ac.kr/" target="_blank" style="color: #ffd700;"> Imaging Intelligence Lab</a>. I also worked on Fourier Ptychography in Professor Guoan Zheng's <a href="https://sites.google.com/view/smartimaging/home?authuser=0" target="_blank" style="color: #ffd700;"> Smart Imaging Lab.</a> </p>
     <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start; margin-top: 24px;">
@@ -1409,4 +1437,610 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
     <br>
-    <p style="text-align: justify;">Hi! I am a Computer Science PhD student in <strong><a href="https://kristinamonakhova.com/" target="_blank" style="color: #ffd700;"> Computational Imaging Lab @ Cornell</a></strong> advised by Professor Kristina Monakhova. My research focuses on machine learning and optimization to advance imaging systems, with the goal of expanding the limits of vision. Currently, I am working on event-based 3D motion detection and diffusion models.<br> <br>During my Undergraduate studies, I worked on lensless imaging and laser speckle imaging in Professor Seung Ah Lee's <a href="https://imaging.snu.ac.kr/" target="_blank" style="color: #ffd700;"> Imaging Intelligence Lab</a>. I also worked on Fourier Ptychography in Professor Guoan Zheng's <a href="https://sites.google.com/view/smartimaging/home?authuser=0" target="_blank" style="color: #ffd700;"> Smart Imaging Lab.</a> </p
+    <p style="text-align: justify;">Hi! I am a Computer Science PhD student in <strong><a href="https://kristinamonakhova.com/" target="_blank" style="color: #ffd700;"> Computational Imaging Lab @ Cornell</a></strong> advised by Professor Kristina Monakhova. My research focuses on machine learning and optimization to advance imaging systems, with the goal of expanding the limits of vision. Currently, I am working on event-based 3D motion detection and diffusion models.<br> <br>During my Undergraduate studies, I worked on lensless imaging and laser speckle imaging in Professor Seung Ah Lee's <a href="https://imaging.snu.ac.kr/" target="_blank" style="color: #ffd700;"> Imaging Intelligence Lab</a>. I also worked on Fourier Ptychography in Professor Guoan Zheng's <a href="https://sites.google.com/view/smartimaging/home?authuser=0" target="_blank" style="color: #ffd700;"> Smart Imaging Lab.</a> </p>
+    <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start; margin-top: 24px;">
+      <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start;">
+        <span style="font-size: 1.1rem; color: #b7b7b7; font-family: 'Fira Code', monospace; font-weight: 800;">Contact</span>
+        <span style="font-size: 0.9rem; color: #ffd700; font-family: 'Fira Code', monospace; margin: 8px 0 12px 0;">haleylee[at]cs[dot]cornell[dot]</span>
+        <div style="display: flex; justify-content: flex-start; align-items: center; gap: 24px; margin-top: 4px">
+          <a href="mailto:haleylee@cs.cornell.edu" title="Email" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fas fa-envelope"></i></a>
+          <a href="https://scholar.google.com/citations?user=t2e56pQAAAAJ&hl=en" target="_blank" title="Google Scholar" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-google-scholar"></i></a>
+          <a href="https://www.linkedin.com/in/yujin-haley-lee-3a6375186" target="_blank" title="LinkedIn" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fab fa-linkedin"></i></a>
+          <a href="HaleyLEE_CV.pdf" target="_blank" title="CV" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-cv"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var profileImgHover = document.querySelector('.profile-img-hover');
+  var hoverGif = document.getElementById('profile-hover-gif');
+  if (profileImgHover && hoverGif) {
+    profileImgHover.addEventListener('mouseenter', function() {
+      // Reset GIF by re-assigning src
+      hoverGif.src = '';
+      setTimeout(function() {
+        hoverGif.src = 'event_frames.gif';
+      }, 10);
+    });
+  }
+});
+    <br>
+    <p style="text-align: justify;">Hi! I am a Computer Science PhD student in <strong><a href="https://kristinamonakhova.com/" target="_blank" style="color: #ffd700;"> Computational Imaging Lab @ Cornell</a></strong> advised by Professor Kristina Monakhova. My research focuses on machine learning and optimization to advance imaging systems, with the goal of expanding the limits of vision. Currently, I am working on event-based 3D motion detection and diffusion models.<br> <br>During my Undergraduate studies, I worked on lensless imaging and laser speckle imaging in Professor Seung Ah Lee's <a href="https://imaging.snu.ac.kr/" target="_blank" style="color: #ffd700;"> Imaging Intelligence Lab</a>. I also worked on Fourier Ptychography in Professor Guoan Zheng's <a href="https://sites.google.com/view/smartimaging/home?authuser=0" target="_blank" style="color: #ffd700;"> Smart Imaging Lab.</a> </p>
+    <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start; margin-top: 24px;">
+      <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start;">
+        <span style="font-size: 1.1rem; color: #b7b7b7; font-family: 'Fira Code', monospace; font-weight: 800;">Contact</span>
+        <span style="font-size: 0.9rem; color: #ffd700; font-family: 'Fira Code', monospace; margin: 8px 0 12px 0;">haleylee[at]cs[dot]cornell[dot]</span>
+        <div style="display: flex; justify-content: flex-start; align-items: center; gap: 24px; margin-top: 4px">
+          <a href="mailto:haleylee@cs.cornell.edu" title="Email" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fas fa-envelope"></i></a>
+          <a href="https://scholar.google.com/citations?user=t2e56pQAAAAJ&hl=en" target="_blank" title="Google Scholar" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-google-scholar"></i></a>
+          <a href="https://www.linkedin.com/in/yujin-haley-lee-3a6375186" target="_blank" title="LinkedIn" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fab fa-linkedin"></i></a>
+          <a href="HaleyLEE_CV.pdf" target="_blank" title="CV" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-cv"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var profileImgHover = document.querySelector('.profile-img-hover');
+  var hoverGif = document.getElementById('profile-hover-gif');
+  if (profileImgHover && hoverGif) {
+    profileImgHover.addEventListener('mouseenter', function() {
+      // Reset GIF by re-assigning src
+      hoverGif.src = '';
+      setTimeout(function() {
+        hoverGif.src = 'event_frames.gif';
+      }, 10);
+    });
+  }
+});
+    <br>
+    <p style="text-align: justify;">Hi! I am a Computer Science PhD student in <strong><a href="https://kristinamonakhova.com/" target="_blank" style="color: #ffd700;"> Computational Imaging Lab @ Cornell</a></strong> advised by Professor Kristina Monakhova. My research focuses on machine learning and optimization to advance imaging systems, with the goal of expanding the limits of vision. Currently, I am working on event-based 3D motion detection and diffusion models.<br> <br>During my Undergraduate studies, I worked on lensless imaging and laser speckle imaging in Professor Seung Ah Lee's <a href="https://imaging.snu.ac.kr/" target="_blank" style="color: #ffd700;"> Imaging Intelligence Lab</a>. I also worked on Fourier Ptychography in Professor Guoan Zheng's <a href="https://sites.google.com/view/smartimaging/home?authuser=0" target="_blank" style="color: #ffd700;"> Smart Imaging Lab.</a> </p>
+    <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start; margin-top: 24px;">
+      <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start;">
+        <span style="font-size: 1.1rem; color: #b7b7b7; font-family: 'Fira Code', monospace; font-weight: 800;">Contact</span>
+        <span style="font-size: 0.9rem; color: #ffd700; font-family: 'Fira Code', monospace; margin: 8px 0 12px 0;">haleylee[at]cs[dot]cornell[dot]</span>
+        <div style="display: flex; justify-content: flex-start; align-items: center; gap: 24px; margin-top: 4px">
+          <a href="mailto:haleylee@cs.cornell.edu" title="Email" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fas fa-envelope"></i></a>
+          <a href="https://scholar.google.com/citations?user=t2e56pQAAAAJ&hl=en" target="_blank" title="Google Scholar" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-google-scholar"></i></a>
+          <a href="https://www.linkedin.com/in/yujin-haley-lee-3a6375186" target="_blank" title="LinkedIn" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fab fa-linkedin"></i></a>
+          <a href="HaleyLEE_CV.pdf" target="_blank" title="CV" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-cv"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var profileImgHover = document.querySelector('.profile-img-hover');
+  var hoverGif = document.getElementById('profile-hover-gif');
+  if (profileImgHover && hoverGif) {
+    profileImgHover.addEventListener('mouseenter', function() {
+      // Reset GIF by re-assigning src
+      hoverGif.src = '';
+      setTimeout(function() {
+        hoverGif.src = 'event_frames.gif';
+      }, 10);
+    });
+  }
+});
+    <br>
+    <p style="text-align: justify;">Hi! I am a Computer Science PhD student in <strong><a href="https://kristinamonakhova.com/" target="_blank" style="color: #ffd700;"> Computational Imaging Lab @ Cornell</a></strong> advised by Professor Kristina Monakhova. My research focuses on machine learning and optimization to advance imaging systems, with the goal of expanding the limits of vision. Currently, I am working on event-based 3D motion detection and diffusion models.<br> <br>During my Undergraduate studies, I worked on lensless imaging and laser speckle imaging in Professor Seung Ah Lee's <a href="https://imaging.snu.ac.kr/" target="_blank" style="color: #ffd700;"> Imaging Intelligence Lab</a>. I also worked on Fourier Ptychography in Professor Guoan Zheng's <a href="https://sites.google.com/view/smartimaging/home?authuser=0" target="_blank" style="color: #ffd700;"> Smart Imaging Lab.</a> </p>
+    <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start; margin-top: 24px;">
+      <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start;">
+        <span style="font-size: 1.1rem; color: #b7b7b7; font-family: 'Fira Code', monospace; font-weight: 800;">Contact</span>
+        <span style="font-size: 0.9rem; color: #ffd700; font-family: 'Fira Code', monospace; margin: 8px 0 12px 0;">haleylee[at]cs[dot]cornell[dot]</span>
+        <div style="display: flex; justify-content: flex-start; align-items: center; gap: 24px; margin-top: 4px">
+          <a href="mailto:haleylee@cs.cornell.edu" title="Email" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fas fa-envelope"></i></a>
+          <a href="https://scholar.google.com/citations?user=t2e56pQAAAAJ&hl=en" target="_blank" title="Google Scholar" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-google-scholar"></i></a>
+          <a href="https://www.linkedin.com/in/yujin-haley-lee-3a6375186" target="_blank" title="LinkedIn" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fab fa-linkedin"></i></a>
+          <a href="HaleyLEE_CV.pdf" target="_blank" title="CV" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-cv"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var profileImgHover = document.querySelector('.profile-img-hover');
+  var hoverGif = document.getElementById('profile-hover-gif');
+  if (profileImgHover && hoverGif) {
+    profileImgHover.addEventListener('mouseenter', function() {
+      // Reset GIF by re-assigning src
+      hoverGif.src = '';
+      setTimeout(function() {
+        hoverGif.src = 'event_frames.gif';
+      }, 10);
+    });
+  }
+});
+    <br>
+    <p style="text-align: justify;">Hi! I am a Computer Science PhD student in <strong><a href="https://kristinamonakhova.com/" target="_blank" style="color: #ffd700;"> Computational Imaging Lab @ Cornell</a></strong> advised by Professor Kristina Monakhova. My research focuses on machine learning and optimization to advance imaging systems, with the goal of expanding the limits of vision. Currently, I am working on event-based 3D motion detection and diffusion models.<br> <br>During my Undergraduate studies, I worked on lensless imaging and laser speckle imaging in Professor Seung Ah Lee's <a href="https://imaging.snu.ac.kr/" target="_blank" style="color: #ffd700;"> Imaging Intelligence Lab</a>. I also worked on Fourier Ptychography in Professor Guoan Zheng's <a href="https://sites.google.com/view/smartimaging/home?authuser=0" target="_blank" style="color: #ffd700;"> Smart Imaging Lab.</a> </p>
+    <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start; margin-top: 24px;">
+      <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start;">
+        <span style="font-size: 1.1rem; color: #b7b7b7; font-family: 'Fira Code', monospace; font-weight: 800;">Contact</span>
+        <span style="font-size: 0.9rem; color: #ffd700; font-family: 'Fira Code', monospace; margin: 8px 0 12px 0;">haleylee[at]cs[dot]cornell[dot]</span>
+        <div style="display: flex; justify-content: flex-start; align-items: center; gap: 24px; margin-top: 4px">
+          <a href="mailto:haleylee@cs.cornell.edu" title="Email" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fas fa-envelope"></i></a>
+          <a href="https://scholar.google.com/citations?user=t2e56pQAAAAJ&hl=en" target="_blank" title="Google Scholar" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-google-scholar"></i></a>
+          <a href="https://www.linkedin.com/in/yujin-haley-lee-3a6375186" target="_blank" title="LinkedIn" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fab fa-linkedin"></i></a>
+          <a href="HaleyLEE_CV.pdf" target="_blank" title="CV" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-cv"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var profileImgHover = document.querySelector('.profile-img-hover');
+  var hoverGif = document.getElementById('profile-hover-gif');
+  if (profileImgHover && hoverGif) {
+    profileImgHover.addEventListener('mouseenter', function() {
+      // Reset GIF by re-assigning src
+      hoverGif.src = '';
+      setTimeout(function() {
+        hoverGif.src = 'event_frames.gif';
+      }, 10);
+    });
+  }
+});
+    <br>
+    <p style="text-align: justify;">Hi! I am a Computer Science PhD student in <strong><a href="https://kristinamonakhova.com/" target="_blank" style="color: #ffd700;"> Computational Imaging Lab @ Cornell</a></strong> advised by Professor Kristina Monakhova. My research focuses on machine learning and optimization to advance imaging systems, with the goal of expanding the limits of vision. Currently, I am working on event-based 3D motion detection and diffusion models.<br> <br>During my Undergraduate studies, I worked on lensless imaging and laser speckle imaging in Professor Seung Ah Lee's <a href="https://imaging.snu.ac.kr/" target="_blank" style="color: #ffd700;"> Imaging Intelligence Lab</a>. I also worked on Fourier Ptychography in Professor Guoan Zheng's <a href="https://sites.google.com/view/smartimaging/home?authuser=0" target="_blank" style="color: #ffd700;"> Smart Imaging Lab.</a> </p>
+    <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start; margin-top: 24px;">
+      <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start;">
+        <span style="font-size: 1.1rem; color: #b7b7b7; font-family: 'Fira Code', monospace; font-weight: 800;">Contact</span>
+        <span style="font-size: 0.9rem; color: #ffd700; font-family: 'Fira Code', monospace; margin: 8px 0 12px 0;">haleylee[at]cs[dot]cornell[dot]</span>
+        <div style="display: flex; justify-content: flex-start; align-items: center; gap: 24px; margin-top: 4px">
+          <a href="mailto:haleylee@cs.cornell.edu" title="Email" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fas fa-envelope"></i></a>
+          <a href="https://scholar.google.com/citations?user=t2e56pQAAAAJ&hl=en" target="_blank" title="Google Scholar" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-google-scholar"></i></a>
+          <a href="https://www.linkedin.com/in/yujin-haley-lee-3a6375186" target="_blank" title="LinkedIn" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fab fa-linkedin"></i></a>
+          <a href="HaleyLEE_CV.pdf" target="_blank" title="CV" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-cv"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var profileImgHover = document.querySelector('.profile-img-hover');
+  var hoverGif = document.getElementById('profile-hover-gif');
+  if (profileImgHover && hoverGif) {
+    profileImgHover.addEventListener('mouseenter', function() {
+      // Reset GIF by re-assigning src
+      hoverGif.src = '';
+      setTimeout(function() {
+        hoverGif.src = 'event_frames.gif';
+      }, 10);
+    });
+  }
+});
+    <br>
+    <p style="text-align: justify;">Hi! I am a Computer Science PhD student in <strong><a href="https://kristinamonakhova.com/" target="_blank" style="color: #ffd700;"> Computational Imaging Lab @ Cornell</a></strong> advised by Professor Kristina Monakhova. My research focuses on machine learning and optimization to advance imaging systems, with the goal of expanding the limits of vision. Currently, I am working on event-based 3D motion detection and diffusion models.<br> <br>During my Undergraduate studies, I worked on lensless imaging and laser speckle imaging in Professor Seung Ah Lee's <a href="https://imaging.snu.ac.kr/" target="_blank" style="color: #ffd700;"> Imaging Intelligence Lab</a>. I also worked on Fourier Ptychography in Professor Guoan Zheng's <a href="https://sites.google.com/view/smartimaging/home?authuser=0" target="_blank" style="color: #ffd700;"> Smart Imaging Lab.</a> </p>
+    <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start; margin-top: 24px;">
+      <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start;">
+        <span style="font-size: 1.1rem; color: #b7b7b7; font-family: 'Fira Code', monospace; font-weight: 800;">Contact</span>
+        <span style="font-size: 0.9rem; color: #ffd700; font-family: 'Fira Code', monospace; margin: 8px 0 12px 0;">haleylee[at]cs[dot]cornell[dot]</span>
+        <div style="display: flex; justify-content: flex-start; align-items: center; gap: 24px; margin-top: 4px">
+          <a href="mailto:haleylee@cs.cornell.edu" title="Email" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fas fa-envelope"></i></a>
+          <a href="https://scholar.google.com/citations?user=t2e56pQAAAAJ&hl=en" target="_blank" title="Google Scholar" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-google-scholar"></i></a>
+          <a href="https://www.linkedin.com/in/yujin-haley-lee-3a6375186" target="_blank" title="LinkedIn" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fab fa-linkedin"></i></a>
+          <a href="HaleyLEE_CV.pdf" target="_blank" title="CV" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-cv"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var profileImgHover = document.querySelector('.profile-img-hover');
+  var hoverGif = document.getElementById('profile-hover-gif');
+  if (profileImgHover && hoverGif) {
+    profileImgHover.addEventListener('mouseenter', function() {
+      // Reset GIF by re-assigning src
+      hoverGif.src = '';
+      setTimeout(function() {
+        hoverGif.src = 'event_frames.gif';
+      }, 10);
+    });
+  }
+});
+    <br>
+    <p style="text-align: justify;">Hi! I am a Computer Science PhD student in <strong><a href="https://kristinamonakhova.com/" target="_blank" style="color: #ffd700;"> Computational Imaging Lab @ Cornell</a></strong> advised by Professor Kristina Monakhova. My research focuses on machine learning and optimization to advance imaging systems, with the goal of expanding the limits of vision. Currently, I am working on event-based 3D motion detection and diffusion models.<br> <br>During my Undergraduate studies, I worked on lensless imaging and laser speckle imaging in Professor Seung Ah Lee's <a href="https://imaging.snu.ac.kr/" target="_blank" style="color: #ffd700;"> Imaging Intelligence Lab</a>. I also worked on Fourier Ptychography in Professor Guoan Zheng's <a href="https://sites.google.com/view/smartimaging/home?authuser=0" target="_blank" style="color: #ffd700;"> Smart Imaging Lab.</a> </p>
+    <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start; margin-top: 24px;">
+      <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start;">
+        <span style="font-size: 1.1rem; color: #b7b7b7; font-family: 'Fira Code', monospace; font-weight: 800;">Contact</span>
+        <span style="font-size: 0.9rem; color: #ffd700; font-family: 'Fira Code', monospace; margin: 8px 0 12px 0;">haleylee[at]cs[dot]cornell[dot]</span>
+        <div style="display: flex; justify-content: flex-start; align-items: center; gap: 24px; margin-top: 4px">
+          <a href="mailto:haleylee@cs.cornell.edu" title="Email" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fas fa-envelope"></i></a>
+          <a href="https://scholar.google.com/citations?user=t2e56pQAAAAJ&hl=en" target="_blank" title="Google Scholar" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-google-scholar"></i></a>
+          <a href="https://www.linkedin.com/in/yujin-haley-lee-3a6375186" target="_blank" title="LinkedIn" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fab fa-linkedin"></i></a>
+          <a href="HaleyLEE_CV.pdf" target="_blank" title="CV" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-cv"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var profileImgHover = document.querySelector('.profile-img-hover');
+  var hoverGif = document.getElementById('profile-hover-gif');
+  if (profileImgHover && hoverGif) {
+    profileImgHover.addEventListener('mouseenter', function() {
+      // Reset GIF by re-assigning src
+      hoverGif.src = '';
+      setTimeout(function() {
+        hoverGif.src = 'event_frames.gif';
+      }, 10);
+    });
+  }
+});
+    <br>
+    <p style="text-align: justify;">Hi! I am a Computer Science PhD student in <strong><a href="https://kristinamonakhova.com/" target="_blank" style="color: #ffd700;"> Computational Imaging Lab @ Cornell</a></strong> advised by Professor Kristina Monakhova. My research focuses on machine learning and optimization to advance imaging systems, with the goal of expanding the limits of vision. Currently, I am working on event-based 3D motion detection and diffusion models.<br> <br>During my Undergraduate studies, I worked on lensless imaging and laser speckle imaging in Professor Seung Ah Lee's <a href="https://imaging.snu.ac.kr/" target="_blank" style="color: #ffd700;"> Imaging Intelligence Lab</a>. I also worked on Fourier Ptychography in Professor Guoan Zheng's <a href="https://sites.google.com/view/smartimaging/home?authuser=0" target="_blank" style="color: #ffd700;"> Smart Imaging Lab.</a> </p>
+    <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start; margin-top: 24px;">
+      <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start;">
+        <span style="font-size: 1.1rem; color: #b7b7b7; font-family: 'Fira Code', monospace; font-weight: 800;">Contact</span>
+        <span style="font-size: 0.9rem; color: #ffd700; font-family: 'Fira Code', monospace; margin: 8px 0 12px 0;">haleylee[at]cs[dot]cornell[dot]</span>
+        <div style="display: flex; justify-content: flex-start; align-items: center; gap: 24px; margin-top: 4px">
+          <a href="mailto:haleylee@cs.cornell.edu" title="Email" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fas fa-envelope"></i></a>
+          <a href="https://scholar.google.com/citations?user=t2e56pQAAAAJ&hl=en" target="_blank" title="Google Scholar" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-google-scholar"></i></a>
+          <a href="https://www.linkedin.com/in/yujin-haley-lee-3a6375186" target="_blank" title="LinkedIn" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fab fa-linkedin"></i></a>
+          <a href="HaleyLEE_CV.pdf" target="_blank" title="CV" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-cv"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var profileImgHover = document.querySelector('.profile-img-hover');
+  var hoverGif = document.getElementById('profile-hover-gif');
+  if (profileImgHover && hoverGif) {
+    profileImgHover.addEventListener('mouseenter', function() {
+      // Reset GIF by re-assigning src
+      hoverGif.src = '';
+      setTimeout(function() {
+        hoverGif.src = 'event_frames.gif';
+      }, 10);
+    });
+  }
+});
+    <br>
+    <p style="text-align: justify;">Hi! I am a Computer Science PhD student in <strong><a href="https://kristinamonakhova.com/" target="_blank" style="color: #ffd700;"> Computational Imaging Lab @ Cornell</a></strong> advised by Professor Kristina Monakhova. My research focuses on machine learning and optimization to advance imaging systems, with the goal of expanding the limits of vision. Currently, I am working on event-based 3D motion detection and diffusion models.<br> <br>During my Undergraduate studies, I worked on lensless imaging and laser speckle imaging in Professor Seung Ah Lee's <a href="https://imaging.snu.ac.kr/" target="_blank" style="color: #ffd700;"> Imaging Intelligence Lab</a>. I also worked on Fourier Ptychography in Professor Guoan Zheng's <a href="https://sites.google.com/view/smartimaging/home?authuser=0" target="_blank" style="color: #ffd700;"> Smart Imaging Lab.</a> </p>
+    <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start; margin-top: 24px;">
+      <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start;">
+        <span style="font-size: 1.1rem; color: #b7b7b7; font-family: 'Fira Code', monospace; font-weight: 800;">Contact</span>
+        <span style="font-size: 0.9rem; color: #ffd700; font-family: 'Fira Code', monospace; margin: 8px 0 12px 0;">haleylee[at]cs[dot]cornell[dot]</span>
+        <div style="display: flex; justify-content: flex-start; align-items: center; gap: 24px; margin-top: 4px">
+          <a href="mailto:haleylee@cs.cornell.edu" title="Email" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fas fa-envelope"></i></a>
+          <a href="https://scholar.google.com/citations?user=t2e56pQAAAAJ&hl=en" target="_blank" title="Google Scholar" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-google-scholar"></i></a>
+          <a href="https://www.linkedin.com/in/yujin-haley-lee-3a6375186" target="_blank" title="LinkedIn" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fab fa-linkedin"></i></a>
+          <a href="HaleyLEE_CV.pdf" target="_blank" title="CV" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-cv"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var profileImgHover = document.querySelector('.profile-img-hover');
+  var hoverGif = document.getElementById('profile-hover-gif');
+  if (profileImgHover && hoverGif) {
+    profileImgHover.addEventListener('mouseenter', function() {
+      // Reset GIF by re-assigning src
+      hoverGif.src = '';
+      setTimeout(function() {
+        hoverGif.src = 'event_frames.gif';
+      }, 10);
+    });
+  }
+});
+    <br>
+    <p style="text-align: justify;">Hi! I am a Computer Science PhD student in <strong><a href="https://kristinamonakhova.com/" target="_blank" style="color: #ffd700;"> Computational Imaging Lab @ Cornell</a></strong> advised by Professor Kristina Monakhova. My research focuses on machine learning and optimization to advance imaging systems, with the goal of expanding the limits of vision. Currently, I am working on event-based 3D motion detection and diffusion models.<br> <br>During my Undergraduate studies, I worked on lensless imaging and laser speckle imaging in Professor Seung Ah Lee's <a href="https://imaging.snu.ac.kr/" target="_blank" style="color: #ffd700;"> Imaging Intelligence Lab</a>. I also worked on Fourier Ptychography in Professor Guoan Zheng's <a href="https://sites.google.com/view/smartimaging/home?authuser=0" target="_blank" style="color: #ffd700;"> Smart Imaging Lab.</a> </p>
+    <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start; margin-top: 24px;">
+      <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start;">
+        <span style="font-size: 1.1rem; color: #b7b7b7; font-family: 'Fira Code', monospace; font-weight: 800;">Contact</span>
+        <span style="font-size: 0.9rem; color: #ffd700; font-family: 'Fira Code', monospace; margin: 8px 0 12px 0;">haleylee[at]cs[dot]cornell[dot]</span>
+        <div style="display: flex; justify-content: flex-start; align-items: center; gap: 24px; margin-top: 4px">
+          <a href="mailto:haleylee@cs.cornell.edu" title="Email" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fas fa-envelope"></i></a>
+          <a href="https://scholar.google.com/citations?user=t2e56pQAAAAJ&hl=en" target="_blank" title="Google Scholar" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-google-scholar"></i></a>
+          <a href="https://www.linkedin.com/in/yujin-haley-lee-3a6375186" target="_blank" title="LinkedIn" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fab fa-linkedin"></i></a>
+          <a href="HaleyLEE_CV.pdf" target="_blank" title="CV" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-cv"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var profileImgHover = document.querySelector('.profile-img-hover');
+  var hoverGif = document.getElementById('profile-hover-gif');
+  if (profileImgHover && hoverGif) {
+    profileImgHover.addEventListener('mouseenter', function() {
+      // Reset GIF by re-assigning src
+      hoverGif.src = '';
+      setTimeout(function() {
+        hoverGif.src = 'event_frames.gif';
+      }, 10);
+    });
+  }
+});
+    <br>
+    <p style="text-align: justify;">Hi! I am a Computer Science PhD student in <strong><a href="https://kristinamonakhova.com/" target="_blank" style="color: #ffd700;"> Computational Imaging Lab @ Cornell</a></strong> advised by Professor Kristina Monakhova. My research focuses on machine learning and optimization to advance imaging systems, with the goal of expanding the limits of vision. Currently, I am working on event-based 3D motion detection and diffusion models.<br> <br>During my Undergraduate studies, I worked on lensless imaging and laser speckle imaging in Professor Seung Ah Lee's <a href="https://imaging.snu.ac.kr/" target="_blank" style="color: #ffd700;"> Imaging Intelligence Lab</a>. I also worked on Fourier Ptychography in Professor Guoan Zheng's <a href="https://sites.google.com/view/smartimaging/home?authuser=0" target="_blank" style="color: #ffd700;"> Smart Imaging Lab.</a> </p>
+    <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start; margin-top: 24px;">
+      <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start;">
+        <span style="font-size: 1.1rem; color: #b7b7b7; font-family: 'Fira Code', monospace; font-weight: 800;">Contact</span>
+        <span style="font-size: 0.9rem; color: #ffd700; font-family: 'Fira Code', monospace; margin: 8px 0 12px 0;">haleylee[at]cs[dot]cornell[dot]</span>
+        <div style="display: flex; justify-content: flex-start; align-items: center; gap: 24px; margin-top: 4px">
+          <a href="mailto:haleylee@cs.cornell.edu" title="Email" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fas fa-envelope"></i></a>
+          <a href="https://scholar.google.com/citations?user=t2e56pQAAAAJ&hl=en" target="_blank" title="Google Scholar" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-google-scholar"></i></a>
+          <a href="https://www.linkedin.com/in/yujin-haley-lee-3a6375186" target="_blank" title="LinkedIn" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fab fa-linkedin"></i></a>
+          <a href="HaleyLEE_CV.pdf" target="_blank" title="CV" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-cv"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var profileImgHover = document.querySelector('.profile-img-hover');
+  var hoverGif = document.getElementById('profile-hover-gif');
+  if (profileImgHover && hoverGif) {
+    profileImgHover.addEventListener('mouseenter', function() {
+      // Reset GIF by re-assigning src
+      hoverGif.src = '';
+      setTimeout(function() {
+        hoverGif.src = 'event_frames.gif';
+      }, 10);
+    });
+  }
+});
+    <br>
+    <p style="text-align: justify;">Hi! I am a Computer Science PhD student in <strong><a href="https://kristinamonakhova.com/" target="_blank" style="color: #ffd700;"> Computational Imaging Lab @ Cornell</a></strong> advised by Professor Kristina Monakhova. My research focuses on machine learning and optimization to advance imaging systems, with the goal of expanding the limits of vision. Currently, I am working on event-based 3D motion detection and diffusion models.<br> <br>During my Undergraduate studies, I worked on lensless imaging and laser speckle imaging in Professor Seung Ah Lee's <a href="https://imaging.snu.ac.kr/" target="_blank" style="color: #ffd700;"> Imaging Intelligence Lab</a>. I also worked on Fourier Ptychography in Professor Guoan Zheng's <a href="https://sites.google.com/view/smartimaging/home?authuser=0" target="_blank" style="color: #ffd700;"> Smart Imaging Lab.</a> </p>
+    <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start; margin-top: 24px;">
+      <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start;">
+        <span style="font-size: 1.1rem; color: #b7b7b7; font-family: 'Fira Code', monospace; font-weight: 800;">Contact</span>
+        <span style="font-size: 0.9rem; color: #ffd700; font-family: 'Fira Code', monospace; margin: 8px 0 12px 0;">haleylee[at]cs[dot]cornell[dot]</span>
+        <div style="display: flex; justify-content: flex-start; align-items: center; gap: 24px; margin-top: 4px">
+          <a href="mailto:haleylee@cs.cornell.edu" title="Email" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fas fa-envelope"></i></a>
+          <a href="https://scholar.google.com/citations?user=t2e56pQAAAAJ&hl=en" target="_blank" title="Google Scholar" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-google-scholar"></i></a>
+          <a href="https://www.linkedin.com/in/yujin-haley-lee-3a6375186" target="_blank" title="LinkedIn" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fab fa-linkedin"></i></a>
+          <a href="HaleyLEE_CV.pdf" target="_blank" title="CV" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-cv"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var profileImgHover = document.querySelector('.profile-img-hover');
+  var hoverGif = document.getElementById('profile-hover-gif');
+  if (profileImgHover && hoverGif) {
+    profileImgHover.addEventListener('mouseenter', function() {
+      // Reset GIF by re-assigning src
+      hoverGif.src = '';
+      setTimeout(function() {
+        hoverGif.src = 'event_frames.gif';
+      }, 10);
+    });
+  }
+});
+    <br>
+    <p style="text-align: justify;">Hi! I am a Computer Science PhD student in <strong><a href="https://kristinamonakhova.com/" target="_blank" style="color: #ffd700;"> Computational Imaging Lab @ Cornell</a></strong> advised by Professor Kristina Monakhova. My research focuses on machine learning and optimization to advance imaging systems, with the goal of expanding the limits of vision. Currently, I am working on event-based 3D motion detection and diffusion models.<br> <br>During my Undergraduate studies, I worked on lensless imaging and laser speckle imaging in Professor Seung Ah Lee's <a href="https://imaging.snu.ac.kr/" target="_blank" style="color: #ffd700;"> Imaging Intelligence Lab</a>. I also worked on Fourier Ptychography in Professor Guoan Zheng's <a href="https://sites.google.com/view/smartimaging/home?authuser=0" target="_blank" style="color: #ffd700;"> Smart Imaging Lab.</a> </p>
+    <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start; margin-top: 24px;">
+      <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start;">
+        <span style="font-size: 1.1rem; color: #b7b7b7; font-family: 'Fira Code', monospace; font-weight: 800;">Contact</span>
+        <span style="font-size: 0.9rem; color: #ffd700; font-family: 'Fira Code', monospace; margin: 8px 0 12px 0;">haleylee[at]cs[dot]cornell[dot]</span>
+        <div style="display: flex; justify-content: flex-start; align-items: center; gap: 24px; margin-top: 4px">
+          <a href="mailto:haleylee@cs.cornell.edu" title="Email" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fas fa-envelope"></i></a>
+          <a href="https://scholar.google.com/citations?user=t2e56pQAAAAJ&hl=en" target="_blank" title="Google Scholar" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-google-scholar"></i></a>
+          <a href="https://www.linkedin.com/in/yujin-haley-lee-3a6375186" target="_blank" title="LinkedIn" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fab fa-linkedin"></i></a>
+          <a href="HaleyLEE_CV.pdf" target="_blank" title="CV" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-cv"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var profileImgHover = document.querySelector('.profile-img-hover');
+  var hoverGif = document.getElementById('profile-hover-gif');
+  if (profileImgHover && hoverGif) {
+    profileImgHover.addEventListener('mouseenter', function() {
+      // Reset GIF by re-assigning src
+      hoverGif.src = '';
+      setTimeout(function() {
+        hoverGif.src = 'event_frames.gif';
+      }, 10);
+    });
+  }
+});
+    <br>
+    <p style="text-align: justify;">Hi! I am a Computer Science PhD student in <strong><a href="https://kristinamonakhova.com/" target="_blank" style="color: #ffd700;"> Computational Imaging Lab @ Cornell</a></strong> advised by Professor Kristina Monakhova. My research focuses on machine learning and optimization to advance imaging systems, with the goal of expanding the limits of vision. Currently, I am working on event-based 3D motion detection and diffusion models.<br> <br>During my Undergraduate studies, I worked on lensless imaging and laser speckle imaging in Professor Seung Ah Lee's <a href="https://imaging.snu.ac.kr/" target="_blank" style="color: #ffd700;"> Imaging Intelligence Lab</a>. I also worked on Fourier Ptychography in Professor Guoan Zheng's <a href="https://sites.google.com/view/smartimaging/home?authuser=0" target="_blank" style="color: #ffd700;"> Smart Imaging Lab.</a> </p>
+    <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start; margin-top: 24px;">
+      <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start;">
+        <span style="font-size: 1.1rem; color: #b7b7b7; font-family: 'Fira Code', monospace; font-weight: 800;">Contact</span>
+        <span style="font-size: 0.9rem; color: #ffd700; font-family: 'Fira Code', monospace; margin: 8px 0 12px 0;">haleylee[at]cs[dot]cornell[dot]</span>
+        <div style="display: flex; justify-content: flex-start; align-items: center; gap: 24px; margin-top: 4px">
+          <a href="mailto:haleylee@cs.cornell.edu" title="Email" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fas fa-envelope"></i></a>
+          <a href="https://scholar.google.com/citations?user=t2e56pQAAAAJ&hl=en" target="_blank" title="Google Scholar" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-google-scholar"></i></a>
+          <a href="https://www.linkedin.com/in/yujin-haley-lee-3a6375186" target="_blank" title="LinkedIn" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fab fa-linkedin"></i></a>
+          <a href="HaleyLEE_CV.pdf" target="_blank" title="CV" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-cv"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var profileImgHover = document.querySelector('.profile-img-hover');
+  var hoverGif = document.getElementById('profile-hover-gif');
+  if (profileImgHover && hoverGif) {
+    profileImgHover.addEventListener('mouseenter', function() {
+      // Reset GIF by re-assigning src
+      hoverGif.src = '';
+      setTimeout(function() {
+        hoverGif.src = 'event_frames.gif';
+      }, 10);
+    });
+  }
+});
+    <br>
+    <p style="text-align: justify;">Hi! I am a Computer Science PhD student in <strong><a href="https://kristinamonakhova.com/" target="_blank" style="color: #ffd700;"> Computational Imaging Lab @ Cornell</a></strong> advised by Professor Kristina Monakhova. My research focuses on machine learning and optimization to advance imaging systems, with the goal of expanding the limits of vision. Currently, I am working on event-based 3D motion detection and diffusion models.<br> <br>During my Undergraduate studies, I worked on lensless imaging and laser speckle imaging in Professor Seung Ah Lee's <a href="https://imaging.snu.ac.kr/" target="_blank" style="color: #ffd700;"> Imaging Intelligence Lab</a>. I also worked on Fourier Ptychography in Professor Guoan Zheng's <a href="https://sites.google.com/view/smartimaging/home?authuser=0" target="_blank" style="color: #ffd700;"> Smart Imaging Lab.</a> </p>
+    <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start; margin-top: 24px;">
+      <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start;">
+        <span style="font-size: 1.1rem; color: #b7b7b7; font-family: 'Fira Code', monospace; font-weight: 800;">Contact</span>
+        <span style="font-size: 0.9rem; color: #ffd700; font-family: 'Fira Code', monospace; margin: 8px 0 12px 0;">haleylee[at]cs[dot]cornell[dot]</span>
+        <div style="display: flex; justify-content: flex-start; align-items: center; gap: 24px; margin-top: 4px">
+          <a href="mailto:haleylee@cs.cornell.edu" title="Email" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fas fa-envelope"></i></a>
+          <a href="https://scholar.google.com/citations?user=t2e56pQAAAAJ&hl=en" target="_blank" title="Google Scholar" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-google-scholar"></i></a>
+          <a href="https://www.linkedin.com/in/yujin-haley-lee-3a6375186" target="_blank" title="LinkedIn" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fab fa-linkedin"></i></a>
+          <a href="HaleyLEE_CV.pdf" target="_blank" title="CV" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-cv"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var profileImgHover = document.querySelector('.profile-img-hover');
+  var hoverGif = document.getElementById('profile-hover-gif');
+  if (profileImgHover && hoverGif) {
+    profileImgHover.addEventListener('mouseenter', function() {
+      // Reset GIF by re-assigning src
+      hoverGif.src = '';
+      setTimeout(function() {
+        hoverGif.src = 'event_frames.gif';
+      }, 10);
+    });
+  }
+});
+    <br>
+    <p style="text-align: justify;">Hi! I am a Computer Science PhD student in <strong><a href="https://kristinamonakhova.com/" target="_blank" style="color: #ffd700;"> Computational Imaging Lab @ Cornell</a></strong> advised by Professor Kristina Monakhova. My research focuses on machine learning and optimization to advance imaging systems, with the goal of expanding the limits of vision. Currently, I am working on event-based 3D motion detection and diffusion models.<br> <br>During my Undergraduate studies, I worked on lensless imaging and laser speckle imaging in Professor Seung Ah Lee's <a href="https://imaging.snu.ac.kr/" target="_blank" style="color: #ffd700;"> Imaging Intelligence Lab</a>. I also worked on Fourier Ptychography in Professor Guoan Zheng's <a href="https://sites.google.com/view/smartimaging/home?authuser=0" target="_blank" style="color: #ffd700;"> Smart Imaging Lab.</a> </p>
+    <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start; margin-top: 24px;">
+      <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start;">
+        <span style="font-size: 1.1rem; color: #b7b7b7; font-family: 'Fira Code', monospace; font-weight: 800;">Contact</span>
+        <span style="font-size: 0.9rem; color: #ffd700; font-family: 'Fira Code', monospace; margin: 8px 0 12px 0;">haleylee[at]cs[dot]cornell[dot]</span>
+        <div style="display: flex; justify-content: flex-start; align-items: center; gap: 24px; margin-top: 4px">
+          <a href="mailto:haleylee@cs.cornell.edu" title="Email" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fas fa-envelope"></i></a>
+          <a href="https://scholar.google.com/citations?user=t2e56pQAAAAJ&hl=en" target="_blank" title="Google Scholar" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-google-scholar"></i></a>
+          <a href="https://www.linkedin.com/in/yujin-haley-lee-3a6375186" target="_blank" title="LinkedIn" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fab fa-linkedin"></i></a>
+          <a href="HaleyLEE_CV.pdf" target="_blank" title="CV" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-cv"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var profileImgHover = document.querySelector('.profile-img-hover');
+  var hoverGif = document.getElementById('profile-hover-gif');
+  if (profileImgHover && hoverGif) {
+    profileImgHover.addEventListener('mouseenter', function() {
+      // Reset GIF by re-assigning src
+      hoverGif.src = '';
+      setTimeout(function() {
+        hoverGif.src = 'event_frames.gif';
+      }, 10);
+    });
+  }
+});
+    <br>
+    <p style="text-align: justify;">Hi! I am a Computer Science PhD student in <strong><a href="https://kristinamonakhova.com/" target="_blank" style="color: #ffd700;"> Computational Imaging Lab @ Cornell</a></strong> advised by Professor Kristina Monakhova. My research focuses on machine learning and optimization to advance imaging systems, with the goal of expanding the limits of vision. Currently, I am working on event-based 3D motion detection and diffusion models.<br> <br>During my Undergraduate studies, I worked on lensless imaging and laser speckle imaging in Professor Seung Ah Lee's <a href="https://imaging.snu.ac.kr/" target="_blank" style="color: #ffd700;"> Imaging Intelligence Lab</a>. I also worked on Fourier Ptychography in Professor Guoan Zheng's <a href="https://sites.google.com/view/smartimaging/home?authuser=0" target="_blank" style="color: #ffd700;"> Smart Imaging Lab.</a> </p>
+    <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start; margin-top: 24px;">
+      <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start;">
+        <span style="font-size: 1.1rem; color: #b7b7b7; font-family: 'Fira Code', monospace; font-weight: 800;">Contact</span>
+        <span style="font-size: 0.9rem; color: #ffd700; font-family: 'Fira Code', monospace; margin: 8px 0 12px 0;">haleylee[at]cs[dot]cornell[dot]</span>
+        <div style="display: flex; justify-content: flex-start; align-items: center; gap: 24px; margin-top: 4px">
+          <a href="mailto:haleylee@cs.cornell.edu" title="Email" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fas fa-envelope"></i></a>
+          <a href="https://scholar.google.com/citations?user=t2e56pQAAAAJ&hl=en" target="_blank" title="Google Scholar" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-google-scholar"></i></a>
+          <a href="https://www.linkedin.com/in/yujin-haley-lee-3a6375186" target="_blank" title="LinkedIn" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fab fa-linkedin"></i></a>
+          <a href="HaleyLEE_CV.pdf" target="_blank" title="CV" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-cv"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var profileImgHover = document.querySelector('.profile-img-hover');
+  var hoverGif = document.getElementById('profile-hover-gif');
+  if (profileImgHover && hoverGif) {
+    profileImgHover.addEventListener('mouseenter', function() {
+      // Reset GIF by re-assigning src
+      hoverGif.src = '';
+      setTimeout(function() {
+        hoverGif.src = 'event_frames.gif';
+      }, 10);
+    });
+  }
+});
+    <br>
+    <p style="text-align: justify;">Hi! I am a Computer Science PhD student in <strong><a href="https://kristinamonakhova.com/" target="_blank" style="color: #ffd700;"> Computational Imaging Lab @ Cornell</a></strong> advised by Professor Kristina Monakhova. My research focuses on machine learning and optimization to advance imaging systems, with the goal of expanding the limits of vision. Currently, I am working on event-based 3D motion detection and diffusion models.<br> <br>During my Undergraduate studies, I worked on lensless imaging and laser speckle imaging in Professor Seung Ah Lee's <a href="https://imaging.snu.ac.kr/" target="_blank" style="color: #ffd700;"> Imaging Intelligence Lab</a>. I also worked on Fourier Ptychography in Professor Guoan Zheng's <a href="https://sites.google.com/view/smartimaging/home?authuser=0" target="_blank" style="color: #ffd700;"> Smart Imaging Lab.</a> </p>
+    <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start; margin-top: 24px;">
+      <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start;">
+        <span style="font-size: 1.1rem; color: #b7b7b7; font-family: 'Fira Code', monospace; font-weight: 800;">Contact</span>
+        <span style="font-size: 0.9rem; color: #ffd700; font-family: 'Fira Code', monospace; margin: 8px 0 12px 0;">haleylee[at]cs[dot]cornell[dot]</span>
+        <div style="display: flex; justify-content: flex-start; align-items: center; gap: 24px; margin-top: 4px">
+          <a href="mailto:haleylee@cs.cornell.edu" title="Email" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fas fa-envelope"></i></a>
+          <a href="https://scholar.google.com/citations?user=t2e56pQAAAAJ&hl=en" target="_blank" title="Google Scholar" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-google-scholar"></i></a>
+          <a href="https://www.linkedin.com/in/yujin-haley-lee-3a6375186" target="_blank" title="LinkedIn" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fab fa-linkedin"></i></a>
+          <a href="HaleyLEE_CV.pdf" target="_blank" title="CV" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-cv"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var profileImgHover = document.querySelector('.profile-img-hover');
+  var hoverGif = document.getElementById('profile-hover-gif');
+  if (profileImgHover && hoverGif) {
+    profileImgHover.addEventListener('mouseenter', function() {
+      // Reset GIF by re-assigning src
+      hoverGif.src = '';
+      setTimeout(function() {
+        hoverGif.src = 'event_frames.gif';
+      }, 10);
+    });
+  }
+});
+    <br>
+    <p style="text-align: justify;">Hi! I am a Computer Science PhD student in <strong><a href="https://kristinamonakhova.com/" target="_blank" style="color: #ffd700;"> Computational Imaging Lab @ Cornell</a></strong> advised by Professor Kristina Monakhova. My research focuses on machine learning and optimization to advance imaging systems, with the goal of expanding the limits of vision. Currently, I am working on event-based 3D motion detection and diffusion models.<br> <br>During my Undergraduate studies, I worked on lensless imaging and laser speckle imaging in Professor Seung Ah Lee's <a href="https://imaging.snu.ac.kr/" target="_blank" style="color: #ffd700;"> Imaging Intelligence Lab</a>. I also worked on Fourier Ptychography in Professor Guoan Zheng's <a href="https://sites.google.com/view/smartimaging/home?authuser=0" target="_blank" style="color: #ffd700;"> Smart Imaging Lab.</a> </p>
+    <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start; margin-top: 24px;">
+      <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start;">
+        <span style="font-size: 1.1rem; color: #b7b7b7; font-family: 'Fira Code', monospace; font-weight: 800;">Contact</span>
+        <span style="font-size: 0.9rem; color: #ffd700; font-family: 'Fira Code', monospace; margin: 8px 0 12px 0;">haleylee[at]cs[dot]cornell[dot]</span>
+        <div style="display: flex; justify-content: flex-start; align-items: center; gap: 24px; margin-top: 4px">
+          <a href="mailto:haleylee@cs.cornell.edu" title="Email" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fas fa-envelope"></i></a>
+          <a href="https://scholar.google.com/citations?user=t2e56pQAAAAJ&hl=en" target="_blank" title="Google Scholar" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-google-scholar"></i></a>
+          <a href="https://www.linkedin.com/in/yujin-haley-lee-3a6375186" target="_blank" title="LinkedIn" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="fab fa-linkedin"></i></a>
+          <a href="HaleyLEE_CV.pdf" target="_blank" title="CV" style="color: #ffd700; font-size: 3rem; display: flex; align-items: center;"><i class="ai ai-cv"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var profileImgHover = document.querySelector('.profile-img-hover');
+  var hoverGif = document.getElementById('profile-hover-gif');
+  if (profileImgHover && hoverGif) {
+    profileImgHover.addEventListener('mouseenter', function() {
+      // Reset GIF by re-assigning src
+      hoverGif.src = '';
+      setTimeout(function() {
+        hoverGif.src = 'event_frames.gif';
+      }, 10);
+    });
+  }
+});
+    <br>
+    <p style="text-align: justify;">Hi! I am a Computer Science PhD student in <strong><a href="https://kristinamonakhova.com/" target="_blank" style="color: #ffd700;"> Computational Imaging Lab @ Cornell</a></strong> advised by Professor Kristina Monakhova. My research focuses on machine learning and optimization to advance imaging systems, with the goal of expanding the limits of vision. Currently, I am working on event-based 3D motion detection and diffusion models.<br> <br>During my Undergraduate studies, I worked on lensless imaging and laser speckle imaging in Professor Seung Ah Lee's <a href="https://imaging.snu.ac.kr/" target="_blank" style="color: #ffd700;"> Imaging Intelligence Lab</a>. I also worked on Fourier Ptychography in Professor Guoan Zheng's <a href="https://sites.google.com/view/smartimaging/home?authuser=0" target="_blank" style="color: #ffd700;"> Smart Imaging Lab.</a> </p>
+    <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start; margin-top: 24px;">
+      <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start;">
+        <span style="font-size: 1.1rem; color: #b7b7b7; font-family: 'Fira Code', monospace; font-weight: 800;">Contact</span>
+        <span style="font-size: 0.9rem; color: #ffd700; font-family: 'Fira Code', monospace; margin: 8px 0 12px 0;">haleylee[at]cs[dot]cornell[dot]</span>
+        <div style="display: flex; justify-content: flex-start; align-items: center; gap: 24px; margin-top: 4px">
+          <a href="mailto:haleylee@cs.cornell.edu" title="Email" style="color: #ffd
